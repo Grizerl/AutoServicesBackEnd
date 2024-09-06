@@ -10,8 +10,9 @@
                     <input name="name" type="text" class="form-control">
                   </div>
                   <div class="form-group">
-                    <label>Images</label>
-                    <textarea class="editor" name="img"></textarea>
+                  <label for="feature_image">Feature Image</label>
+                  <input type="text" id="feature_image" name="img" value="">
+                  <a href="" class="popup_selector" data-inputid="feature_image">Select Image</a>
                   </div>
                   <div class="form-group">
                     <label>Role</label>

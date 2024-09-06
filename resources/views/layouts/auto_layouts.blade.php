@@ -23,7 +23,7 @@
     <!--end-->
     <!--Link css-->
     <link rel="stylesheet" href="./assets/css/index.css">
-    <link rel="icon" href="./assets/images/circle.png">
+    <link rel="icon" href="/assets/images/website-logo.png">
     <!--end-->
     <!--AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">

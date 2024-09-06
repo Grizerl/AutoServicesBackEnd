@@ -16,37 +16,37 @@
          <div class="col-lg-3 col-6">
             <div class="small-box bg-info">
                <div class="inner">
-                  <h3>{}</h3>
+                  <h3>{{$post}}</h3>
                   <p>Blog</p>
                </div>
                <div class="icon">
                <i class="fa-solid fa-blog"></i>
                </div>
-               <a href="" class="small-box-footer">More info <i class="fa-solid fa-caret-down"></i></a>
+               <a href="{{route('post.index')}}" class="small-box-footer">More info <i class="fa-solid fa-caret-down"></i></a>
             </div>
          </div>
          <div class="col-lg-3 col-6">
             <div class="small-box bg-success">
                <div class="inner">
-                  <h3>{}</h3>
+                  <h3>{{$client}}</h3>
                   <p>Client</p>
                </div>
                <div class="icon">
                <i class="fa-solid fa-users"></i>
                </div>
-               <a href="" class="small-box-footer">More info <i class="fa-solid fa-caret-down"></i></a>
+               <a href="{{route('client.index')}}" class="small-box-footer">More info <i class="fa-solid fa-caret-down"></i></a>
             </div>
          </div>
          <div class="col-lg-3 col-6">
             <div class="small-box bg-success ">
                <div class="inner">
-                  <h3>{}</h3>
+                  <h3>{{$members}}</h3>
                   <p>Members</p>
                </div>
                <div class="icon">
                <i class="fa-solid fa-user-plus"></i>
                </div>
-               <a href="" class="small-box-footer">More info <i class="fa-solid fa-caret-down"></i></a>
+               <a href="{{route('members.index')}}" class="small-box-footer">More info <i class="fa-solid fa-caret-down"></i></a>
             </div>
          </div>
          <div class="col-lg-3 col-6">
@@ -58,7 +58,7 @@
                <div class="icon">
                <i class="fa-solid fa-toolbox"></i>
                </div>
-               <a href="" class="small-box-footer">More info <i class="fa-solid fa-caret-down"></i></a>
+               <a href="{{route('repair.index')}}" class="small-box-footer">More info <i class="fa-solid fa-caret-down"></i></a>
             </div>
          </div>
       </div>

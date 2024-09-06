@@ -35,44 +35,45 @@
                   </tr>
               </thead>
               <tbody>
-                @foreach ($members as $memberss)
-                  <tr>
-                      <td>
-                        {{$memberss->id}}
-                      </td>
-                      <td>
-                          <a>
-                            {{$memberss->name}}
-                          </a>
-                          <br>
-                      </td>
-                      <td>
-                        {{$memberss->img}}
-                      </td>
-                      <td class="project_progress">
-                         {{$memberss->role}}
-                      </td>
-                      <td style="display: flex; margin-left: 10vh;" class="project-actions text-right">
-                          <a class="btn btn-primary btn-sm mr-1" href="">
-                              <i class="fas fa-folder">
-                              </i>
-                              View
-                          </a>
-                          <a class="btn btn-info btn-sm mr-1" href="{}">
-                              <i class="fas fa-pencil-alt">
-                              </i>
-                              Edit
-                          </a>
-                          <form action="{}" method="post">
-                          <button class="btn btn-danger btn-sm" type="submit">
-                              <i class="fas fa-trash">
-                              </i>
-                              Delete
-                          </button>
-                          </form>
-                      </td>
-                  </tr>
-                  @endforeach
+              @foreach ($members as $member)
+    <tr>
+        <td>
+            {{$member->id}}
+        </td>
+        <td>
+            <a>
+                {{$member->name}}
+            </a>
+            <br>
+        </td>
+        <td>
+            {{$member->img}}
+        </td>
+        <td class="project_progress">
+            {{$member->role}}
+        </td>
+        <td style="display: flex; margin-left: 10vh;" class="project-actions text-right">
+            <a class="btn btn-primary btn-sm mr-1" href="">
+                <i class="fas fa-folder"></i>
+                View
+            </a>
+            <a class="btn btn-info btn-sm mr-1" href="{{ route('members.edit', $member->id)}}">
+                <i class="fas fa-pencil-alt"></i>
+                Edit
+            </a>
+            <form action="{{ route('members.destroy', $member->id) }}" method="post" style="display: inline;">
+    @csrf
+    @method('DELETE')
+    <button class="btn btn-danger btn-sm" type="submit">
+        <i class="fas fa-trash"></i>
+        Delete
+    </button>
+</form>
+
+        </td>
+    </tr>
+@endforeach
+
               </tbody>
           </table>
         </div>

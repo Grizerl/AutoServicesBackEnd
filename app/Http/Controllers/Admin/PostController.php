@@ -3,19 +3,19 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Members;
+use App\Models\Post;
 use Illuminate\Http\Request;
 
-class MemberController extends Controller
+class PostController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $members=Members::all();
-        return view('admin.members.index',[
-            'members'=>$members,
+        $post_content=Post::all();
+        return view('admin.post.index',[
+            'post_content'=>$post_content,
         ]);
     }
 
@@ -24,7 +24,7 @@ class MemberController extends Controller
      */
     public function create()
     {
-        return view('admin.members.create');
+        return view('admin.post.create');
     }
 
     /**
@@ -32,18 +32,17 @@ class MemberController extends Controller
      */
     public function store(Request $request)
     {
-        $members= new Members();
-        $members->name=$request->name;
-        $members->img=$request->img;
-        $members->role=$request->role;
-        $members->save();
+        $post_content= new Post();
+        $post_content->title=$request->title;
+        $post_content->content=$request->content;
+        $post_content->save();
         return redirect()->back();
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Members $members)
+    public function show(Post $post)
     {
         //
     }
@@ -51,30 +50,30 @@ class MemberController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Members $members)
-{
-    return view('admin.members.edit',[
-        'members' => $members,
-    ]);
-}
+    public function edit(Post $post)
+    {
+        return view('admin.post.edit',[
+            'post'=>$post,
+        ]);
+    }
+
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Members $members)
+    public function update(Request $request, Post $post)
     {
-        $members->name=$request->name;
-        $members->img=$request->img;
-        $members->role=$request->role;
-        $members->save();
+        $post->title=$request->title;
+        $post->content=$request->content;
+        $post->save();
         return redirect()->back();
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Members $members)
+    public function destroy(Post $post)
     {
-        $members->delete();
+        $post->delete();
         return redirect()->back();
     }
 }

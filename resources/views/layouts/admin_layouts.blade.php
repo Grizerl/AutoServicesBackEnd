@@ -25,6 +25,7 @@
   <!-- Daterange picker -->
   <link rel="stylesheet" href="/assets/plugins/daterangepicker/daterangepicker.css">
   <link href="/assets/dist/css/colorbox.css" rel="stylesheet">
+  <link href="/assets/dist/css/colorbox.css" rel="stylesheet">
   <link rel="website icon" href="/assets/images/circle.png">
   <link rel="stylesheet" href="/assets/css/admin.css">
   @inject('adminPanel', 'App\Services\AdminPanel')
@@ -46,13 +47,13 @@
         <a href="{{route('admin-home')}}" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="" class="nav-link">Blog</a>
+        <a href="{{route('post.index')}}" class="nav-link">Blog</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="" class="nav-link">Client</a>
+        <a href="{{route('client.index')}}" class="nav-link">Client</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="" class="nav-link">Members</a>
+        <a href="{{route('members.index')}}" class="nav-link">Members</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="{{route('repair.index')}}" class="nav-link">Help with car</a>
@@ -82,21 +83,21 @@
       <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="#">
           <i class="far fa-bell"></i>
-          <span class="badge badge-warning navbar-badge"></span>
+          <span class="badge badge-warning navbar-badge">{{$adminPanel->show()['amount']}}</span>
         </a>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <span class="dropdown-item dropdown-header"> Notifications</span>
+          <span class="dropdown-item dropdown-header">{{$adminPanel->show()['amount']}} Notifications</span>
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item">
-          <i class="fa-solid fa-clipboard-user"></i> Client
+          <i class="fa-solid fa-clipboard-user"></i>{{$adminPanel->show()['client']}} Client
           </a>
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item">
-          <i class="fa-solid fa-briefcase"></i>Members
+          <i class="fa-solid fa-briefcase"></i>{{$adminPanel->show()['members']}}Members
           </a>
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item">
-          <i class="fa-solid fa-car-burst"></i> Car
+          <i class="fa-solid fa-car-burst"></i>{{$adminPanel->show()['repair']}} Car
           </a>
       </li>
       <li class="nav-item">
@@ -129,7 +130,7 @@
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <li class="nav-item">
-            <a href="" class="nav-link">
+            <a href="{{route('admin-home')}}" class="nav-link">
             <i class="fa-solid fa-car"></i>
             <p>
               Home
@@ -146,13 +147,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="{{route('post.index')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>All news</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="{{route('post.create')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Add news</p>
                 </a>
@@ -285,7 +286,6 @@
 <script src="https://kit.fontawesome.com/46a432ef36.js" crossorigin="anonymous"></script>
 <script src="/assets/dist/js/pages/dashboard.js"></script>
 <script src="https://cdn.tiny.cloud/1/u3xget8b6g00f5okf2wfwg4jua3611mxzrrt0smpk6js3e98/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
-<script type="text/javascript" src="/assets/dist/js/jquery.colorbox-min.js"></script>
 <script type="text/javascript" src="/packages/barryvdh/elfinder/js/standalonepopup.min.js"></script>
 <script src="/assets/js/admin.js"></script>
 </body>

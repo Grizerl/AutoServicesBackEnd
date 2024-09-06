@@ -23,7 +23,7 @@
                 <div class="swiper-slide">
                     <div class="back-img-slide-2">
                         <div class="slide-2-content">
-                            <h2 class="slide-2-title">Best mechanical<br>for service </h2>
+                            <h2 class="slide-2-title">Best mechanical<br>for service</h2>
                             <p class="slide-2-text">Perspicis unde omne iste natus error sit voluptatem acntium<br>
                             doloremque laudanum totam</p>
                             <a class="slide-2-btn" href="#" tabindex="14">More Service +</a>
