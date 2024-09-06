@@ -723,7 +723,8 @@ form input,.section-contact-form-comment
     background: #fff;
     border-radius: 5px;
     outline: none;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 5px;
 }
 .section-contact-form-comment
 {

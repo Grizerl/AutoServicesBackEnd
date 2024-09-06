@@ -26,6 +26,8 @@
   <link rel="stylesheet" href="/assets/plugins/daterangepicker/daterangepicker.css">
   <link href="/assets/dist/css/colorbox.css" rel="stylesheet">
   <link rel="website icon" href="/assets/images/circle.png">
+  <link rel="stylesheet" href="/assets/css/admin.css">
+  @inject('adminPanel', 'App\Services\AdminPanel')
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -41,7 +43,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="" class="nav-link">Home</a>
+        <a href="{{route('admin-home')}}" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="" class="nav-link">Blog</a>
@@ -53,7 +55,7 @@
         <a href="" class="nav-link">Members</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="" class="nav-link">Help with car</a>
+        <a href="{{route('repair.index')}}" class="nav-link">Help with car</a>
       </li>
     </ul>
     <!-- Right navbar links -->
@@ -121,7 +123,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="info">
-          <a href="#" class="d-block ml-2">Welcome {}</a>
+          <a href="#" class="d-block ml-2">Welcome {{$adminPanel->index()['users']}}</a>
         </div>
       </div>
       <nav class="mt-2">
@@ -167,13 +169,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="{{route('client.index')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>All response</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="{{route('client.create')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Add response</p>
                 </a>
@@ -190,13 +192,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="{{route('members.index')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>All members</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="{{route('members.create')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Add members</p>
                 </a>
@@ -213,7 +215,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="" class="nav-link">
+                <a href="{{route('repair.index')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>All auto</p>
                 </a>
@@ -285,7 +287,6 @@
 <script src="https://cdn.tiny.cloud/1/u3xget8b6g00f5okf2wfwg4jua3611mxzrrt0smpk6js3e98/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
 <script type="text/javascript" src="/assets/dist/js/jquery.colorbox-min.js"></script>
 <script type="text/javascript" src="/packages/barryvdh/elfinder/js/standalonepopup.min.js"></script>
-<script src="https://cdn.tiny.cloud/1/u3xget8b6g00f5okf2wfwg4jua3611mxzrrt0smpk6js3e98/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
 <script src="/assets/js/admin.js"></script>
 </body>
 </html>

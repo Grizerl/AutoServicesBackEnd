@@ -52,7 +52,7 @@
          <div class="col-lg-3 col-6">
             <div class="small-box bg-info">
                <div class="inner">
-                  <h3>{}</h3>
+                  <h3>{{$repair}}</h3>
                   <p>Support</p>
                </div>
                <div class="icon">
