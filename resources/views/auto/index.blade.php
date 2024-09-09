@@ -83,12 +83,10 @@
         <div class="aside-container-section-card">
             <div style="width: 40%;">
                 <span class="aside-subtitle">About the company</span>
-                <h1 class="aside-title">We Are Always Ready To <br> Assist Our Service</h1>
-                <p class="aside-text" >Best Frederick locations continues its 10+ plus years tradition
-                of quality auto repair services. vehicle owners in the derrick,
-                MD area should be well aware of the Dynamic Automotive brand of service.
-                We strive to go above and beyond for all of our customers, 
-                who we pair services. vehicle owners.</p>
+                @foreach ($post as $posts)
+                <h1 class="aside-title">{!! str_replace('To', 'To<br>', e($posts->title)) !!}</h1>
+                <p class="aside-text" >{{$posts['content']}}</p>
+                @endforeach
                     <div>
                         <a tabindex="15" class="aside-btn">About More</a>
                     </div>
@@ -202,21 +200,22 @@
         </div>
     </div>
     <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide sr-r">
+    <div class="swiper-wrapper">
+        @foreach ($client as $clients)
+            <div class="swiper-slide sr-r"> 
                 <div class="swiper-slide-content">
                     <div class="slider-client-content">
                         <img id="swiper-img-box" src="./assets/images/hackery-user.png" alt="User Male Icon">
                         <div>
-                            <h6 class="swiper-name-box">David Sockar</h6>
-                            <span class="swiper-role-box">Web Developer</span>
+                            <h6 class="swiper-name-box">{{ $clients['name'] }}</h6>
+                            <span class="swiper-role-box">{{ $clients['role'] }}</span>
                         </div>
                     </div>
                     <p class="swiper-text-box">
-                        Purchase inspection on a Mazda. I was looking to buy it and they let me bring it in on a Saturday. They strive to go above and beyond for all of their customers, including vehicle owners.
+                      {{$clients['commentars']}}
                     </p>
                     <div class="star-container">
-                        <h5 class="swiper-date-box">25 July, 2024</h5>
+                        <h5 class="swiper-date-box">{{$clients['created_at']}}</h5>
                         <ul class="star-content">
                             <li><i class="fa-solid fa-star"></i></li>
                             <li><i class="fa-solid fa-star"></i></li>
@@ -224,126 +223,10 @@
                     </div>
                 </div>
             </div>
-            <!-- Repeat the swiper-slide block as needed -->
-            <div class="swiper-slide sr-r">
-                <div class="swiper-slide-content">
-                    <div class="slider-client-content">
-                        <img id="swiper-img-box" src="./assets/images/hackery-user.png" alt="User Male Icon">
-                        <div>
-                            <h6 class="swiper-name-box">Liton Markers</h6>
-                            <span class="swiper-role-box">Support</span>
-                        </div>
-                    </div>
-                    <p class="swiper-text-box">
-                        Purchase inspection on a Mazda. I was looking to buy it and they let me bring it in on a Saturday. They strive to go above and beyond for all of their customers, including vehicle owners.
-                    </p>
-                    <div class="star-container">
-                        <h5 class="swiper-date-box">30 July, 2024</h5>
-                        <ul class="star-content">
-                            <li><i class="fa-solid fa-star"></i></li>
-                           <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more slides as needed -->
-            <div class="swiper-slide sr-r">
-                <div class="swiper-slide-content">
-                    <div class="slider-client-content">
-                        <img id="swiper-img-box" src="./assets/images/hackery-user.png" alt="User Male Icon">
-                        <div>
-                            <h6 class="swiper-name-box">Mr Anderson</h6>
-                            <span class="swiper-role-box">Client</span>
-                        </div>
-                    </div>
-                    <p class="swiper-text-box">
-                        Purchase inspection on a Mazda. I was looking to buy it and they let me bring it in on a Saturday. They strive to go above and beyond for all of their customers, including vehicle owners.
-                    </p>
-                    <div class="star-container">
-                        <h5 class="swiper-date-box">20 July, 2024</h5>
-                        <ul class="star-content">
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!--  -->
-            <div class="swiper-slide sr-r">
-                <div class="swiper-slide-content">
-                    <div class="slider-client-content">
-                        <img id="swiper-img-box" src="./assets/images/hackery-user.png" alt="User Male Icon">
-                        <div>
-                            <h6 class="swiper-name-box">Stiw Ander</h6>
-                            <span class="swiper-role-box">Developer</span>
-                        </div>
-                    </div>
-                    <p class="swiper-text-box">
-                        Purchase inspection on a Mazda. I was looking to buy it and they let me bring it in on a Saturday. They strive to go above and beyond for all of their customers, including vehicle owners.
-                    </p>
-                    <div class="star-container">
-                        <h5 class="swiper-date-box">15 July, 2024</h5>
-                        <ul class="star-content">
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!--  -->
-            <div class="swiper-slide sr-r">
-                <div class="swiper-slide-content">
-                    <div class="slider-client-content">
-                        <img id="swiper-img-box" src="./assets/images/hackery-user.png" alt="User Male Icon">
-                        <div>
-                            <h6 class="swiper-name-box">Roza Karnel</h6>
-                            <span class="swiper-role-box">Support</span>
-                        </div>
-                    </div>
-                    <p class="swiper-text-box">
-                        Purchase inspection on a Mazda. I was looking to buy it and they let me bring it in on a Saturday. They strive to go above and beyond for all of their customers, including vehicle owners.
-                    </p>
-                    <div class="star-container">
-                        <h5 class="swiper-date-box">12 July, 2024</h5>
-                        <ul class="star-content">
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!--  -->
-            <div class="swiper-slide sr-r">
-                <div class="swiper-slide-content">
-                    <div class="slider-client-content">
-                        <img id="swiper-img-box" src="./assets/images/hackery-user.png" alt="User Male Icon">
-                        <div>
-                            <h6 class="swiper-name-box">Alan Nural</h6>
-                            <span class="swiper-role-box">Developer</span>
-                        </div>
-                    </div>
-                    <p class="swiper-text-box">
-                        Purchase inspection on a Mazda. I was looking to buy it and they let me bring it in on a Saturday. They strive to go above and beyond for all of their customers, including vehicle owners.
-                    </p>
-                    <div class="star-container">
-                        <h5 class="swiper-date-box">5 July, 2024</h5>
-                        <ul class="star-content">
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @endforeach
     </div>
+</div>
+
 </section>
 <section style="margin-top: 10vh;" >
 <div class="swiper-2">
@@ -372,12 +255,9 @@
     <h3 class="section-member-title">Our Talent Member</h3>
     <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide sr-r"><img class="member-img"  src="./assets/people/team-img1.jpg" alt=""><h3>John Delos</h3><span class="section-member-role">Engineer</span></div>
-      <div class="swiper-slide sr-r"><img class="member-img"  src="./assets/people/team-img5.jpg" alt=""><h3>Ajura Agoh</h3><span class="section-member-role">Engineer</span></div>
-      <div class="swiper-slide sr-r"><img class="member-img"  src="./assets/people/team-img3.jpg" alt=""><h3>Sabina Nur</h3><span class="section-member-role">Director</span></div>
-      <div class="swiper-slide sr-r"><img class="member-img"  src="./assets/people/team-img2.jpg" alt=""><h3>Stephen Miller</h3><span class="section-member-role">Engineer</span></div>
-      <div class="swiper-slide sr-r"><img class="member-img"  src="./assets/people/team-img4.jpg" alt=""><h3>Alan Nural</h3><span class="section-member-role">Engineer</span></div>
-      <div class="swiper-slide sr-r"><img class="member-img"  src="./assets/people/team-img5.jpg" alt=""><h3>Liton Sokar</h3><span class="section-member-role">Engineer</span></div>
+        @foreach ($members as $member)
+        <div class="swiper-slide sr-r"><img class="member-img"  src="{{$member['img']}}" alt=""><h3>{{$member['name']}}</h3><span class="section-member-role">{{$member['role']}}</span></div>
+        @endforeach
     </div>
   </div>
 </div>

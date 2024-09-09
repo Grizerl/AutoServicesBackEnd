@@ -10,6 +10,18 @@
                     <input name="name" type="text" class="form-control">
                   </div>
                   <div class="form-group">
+                    <label>Phone number</label>
+                    <input name="phone" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label>Age</label>
+                    <input name="age" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label>Place of residence</label>
+                    <input name="residence" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
                   <label for="feature_image">Feature Image</label>
                   <input type="text" id="feature_image" name="img" value="">
                   <a href="" class="popup_selector" data-inputid="feature_image">Select Image</a>

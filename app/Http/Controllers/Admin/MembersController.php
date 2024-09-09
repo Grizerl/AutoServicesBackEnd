@@ -34,7 +34,10 @@ class MembersController extends Controller
     {
         $members= new Members();
         $members->name=$request->name;
+        $members->phone_number=$request->phone;
+        $members->age=$request->age;
         $members->img=$request->img;
+        $members->place_of_residence=$request->residence;
         $members->role=$request->role;
         $members->save();
         return redirect()->back();
@@ -43,9 +46,11 @@ class MembersController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Members $members)
+    public function show(Members $member)
     {
-        //
+        return view('admin.members.views',[
+            'member'=>$member,
+        ]);
     }
 
     /**
@@ -64,20 +69,25 @@ public function update(Request $request, Members $member)
 {
     // Validate the request data
     $request->validate([
-        'name' => 'required|string|max:255',
+        'name' => 'nullable|string|max:255',
+        'phone' => 'nullable|string|max:255',
+        'age' => 'nullable|string|max:255',
+        'residence' => 'required|string|max:255',
         'img' => 'nullable|string|max:255',
-        'role' => 'required|string|max:255',
+        'role' => 'nullable|string|max:255',
     ]);
 
     // Update the member's details
     $member->name = $request->input('name');
+    $member->phone_number = $request->input('phone');
+    $member->age = $request->input('age');
+    $member->place_of_residence = $request->input('residence');
     $member->img = $request->input('img');
     $member->role = $request->input('role');
     $member->save();
 
     // Redirect or return response
-    return redirect()->route('members.edit', $member->id)
-                     ->with('success', 'Member updated successfully');
+    return redirect()->route('members.edit', $member->id);
 }
 
     /**
@@ -86,7 +96,7 @@ public function update(Request $request, Members $member)
     public function destroy(Members $member)
     {
         $member->delete();
-        return redirect()->route('members.index')->with('success', 'Member deleted successfully');
+        return redirect()->route('members.index');
     }
     
 }

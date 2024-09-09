@@ -53,7 +53,7 @@
             {{$member->role}}
         </td>
         <td style="display: flex; margin-left: 10vh;" class="project-actions text-right">
-            <a class="btn btn-primary btn-sm mr-1" href="">
+            <a class="btn btn-primary btn-sm mr-1" href="{{ route('members.show', $member->id)}}">
                 <i class="fas fa-folder"></i>
                 View
             </a>

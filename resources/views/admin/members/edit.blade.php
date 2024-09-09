@@ -11,6 +11,18 @@
                 <input name="name" type="text" class="form-control" value="{{ $member->name }}">
             </div>
             <div class="form-group">
+                    <label>Phone number</label>
+                    <input name="phone" type="text" class="form-control"  value="{{$member->phone_number}}">
+                  </div>
+                  <div class="form-group">
+                    <label>Age</label>
+                    <input name="age" type="text" class="form-control"  value="{{$member->age}}">
+                  </div>
+                  <div class="form-group">
+                    <label>Place of residence</label>
+                    <input name="residence" type="text" class="form-control"  value="{{$member->place_of_residence}}">
+                  </div>
+            <div class="form-group">
                 <label>Feature Image</label>
                 <input type="text" name="img" value="{{ $member->img }}">
                 <a href="#" class="popup_selector">Select Image</a>

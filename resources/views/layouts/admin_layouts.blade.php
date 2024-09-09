@@ -27,7 +27,9 @@
   <link href="/assets/dist/css/colorbox.css" rel="stylesheet">
   <link href="/assets/dist/css/colorbox.css" rel="stylesheet">
   <link rel="website icon" href="/assets/images/circle.png">
+
   <link rel="stylesheet" href="/assets/css/admin.css">
+  <link rel="stylesheet" href="/assets/css/member.css">
   @inject('adminPanel', 'App\Services\AdminPanel')
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">

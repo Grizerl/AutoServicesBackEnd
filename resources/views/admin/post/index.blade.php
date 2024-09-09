@@ -41,15 +41,10 @@
                           </a>
                           <br>
                       </td>
-                      <td>
+                      <td width="50%">
                         {{$post->content}}
                       </td>
-                      <td style="display: flex; margin-left: 10vh;" class="project-actions text-right">
-                          <a class="btn btn-primary btn-sm mr-1" href="">
-                              <i class="fas fa-folder">
-                              </i>
-                              View
-                          </a>
+                      <td style="display: flex; justify-content: center;  margin-left: 10vh;" class="project-actions text-right">
                           <a class="btn btn-info btn-sm mr-1" href="{{route('post.edit',$post['id'])}}">
                               <i class="fas fa-pencil-alt">
                               </i>
