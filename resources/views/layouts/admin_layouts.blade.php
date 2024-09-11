@@ -90,15 +90,15 @@
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
           <span class="dropdown-item dropdown-header">{{$adminPanel->show()['amount']}} Notifications</span>
           <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
+          <a href="{{route('client.index')}}" class="dropdown-item">
           <i class="fa-solid fa-clipboard-user"></i>{{$adminPanel->show()['client']}} Client
           </a>
           <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
+          <a href="{{route('members.index')}}" class="dropdown-item">
           <i class="fa-solid fa-briefcase"></i>{{$adminPanel->show()['members']}}Members
           </a>
           <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
+          <a href="{{route('repair.index')}}" class="dropdown-item">
           <i class="fa-solid fa-car-burst"></i>{{$adminPanel->show()['repair']}} Car
           </a>
       </li>

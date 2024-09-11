@@ -23,7 +23,7 @@
                   </div>
                   <div class="form-group">
                   <label for="feature_image">Feature Image</label>
-                  <input type="text" id="feature_image" name="img" value="">
+                  <div><input style="width: 100%; padding: 3px 15px; margin: 10px 0px;" type="text" id="feature_image" name="img" value=""></div>
                   <a href="" class="popup_selector" data-inputid="feature_image">Select Image</a>
                   </div>
                   <div class="form-group">

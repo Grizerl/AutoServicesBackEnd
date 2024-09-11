@@ -24,7 +24,7 @@
                   </div>
             <div class="form-group">
                 <label>Feature Image</label>
-                <input type="text" name="img" value="{{ $member->img }}">
+                <div><input style="width: 100%; padding: 3px 15px; margin: 10px 0px;" type="text" name="img" value="{{ $member->img }}"></div>
                 <a href="#" class="popup_selector">Select Image</a>
             </div>
             <div class="form-group">
