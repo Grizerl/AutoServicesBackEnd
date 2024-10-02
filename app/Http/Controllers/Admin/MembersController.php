@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\MembersRequest;
 use App\Models\Members;
 use Illuminate\Http\Request;
 
@@ -30,15 +31,16 @@ class MembersController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(MembersRequest $request)
     {
+        $validDate=$request->validated();
         $members= new Members();
-        $members->name=$request->name;
-        $members->phone_number=$request->phone;
-        $members->age=$request->age;
-        $members->img=$request->img;
-        $members->place_of_residence=$request->residence;
-        $members->role=$request->role;
+        $members->name=$validDate['name'];
+        $members->phone_number=$validDate['phone'];
+        $members->age=$validDate['age'];
+        $members->img=$validDate['img'];
+        $members->place_of_residence=$validDate['residence'];
+        $members->role=$validDate['role'];
         $members->save();
         return redirect()->back();
     }
@@ -65,17 +67,10 @@ public function edit(Members $member)
     ]);
 }
 
-public function update(Request $request, Members $member)
+public function update(MembersRequest $request, Members $member)
 {
     // Validate the request data
-    $request->validate([
-        'name' => 'nullable|string|max:255',
-        'phone' => 'nullable|string|max:255',
-        'age' => 'nullable|string|max:255',
-        'residence' => 'required|string|max:255',
-        'img' => 'nullable|string|max:255',
-        'role' => 'nullable|string|max:255',
-    ]);
+    $validDate=$request->validated();
 
     // Update the member's details
     $member->name = $request->input('name');

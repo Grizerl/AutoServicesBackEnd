@@ -10,4 +10,5 @@ class Members extends Model
     use HasFactory;
 
     protected $guarded = ['id'];
+    protected $fillable = ['name', 'phone_number', 'age', 'img', 'place_of_residence', 'role'];
 }

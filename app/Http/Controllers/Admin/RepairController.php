@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\RepaireRequest;
 use App\Models\repair;
 use Illuminate\Http\Request;
 
@@ -30,19 +31,20 @@ class RepairController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(RepaireRequest $request)
     {
-        $valid=$request->validate([
-            'name'=>['required'],
-            'phone'=>['required'],
-            'car'=>['required'],
-            'comment'=>['required','min:6','max:100']
-        ]);
+        $validateData=$request->validated();
+
         $repair=new repair();
-        $repair->name=$request->name;
-        $repair->telephone=$request->phone;
-        $repair->car=$request->car;
-        $repair->comment=$request->comment;
+
+        $repair->name=$validateData['name'];
+
+        $repair->telephone=$validateData['phone'];
+
+        $repair->car=$validateData['car'];
+
+        $repair->comment=$validateData['comment'];
+        
         $repair->save();
         return redirect()->back();
 

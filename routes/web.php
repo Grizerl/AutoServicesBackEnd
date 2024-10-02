@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Auth;
 
 Auth::routes();
 
-
+Route::get('/', function (){return redirect('/AutoStyle');});
 
 Route::prefix('AutoStyle')->group(function () {
     Route::get('/', [App\Http\Controllers\Auto\HomeController::class, 'index'])->name('home_auto');    

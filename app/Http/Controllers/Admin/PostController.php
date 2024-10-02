@@ -34,7 +34,7 @@ class PostController extends Controller
     {
         $post_content= new Post();
         $post_content->title=$request->title;
-        $post_content->content=$request->content;
+        $post_content->content=$request->content_post;
         $post_content->save();
         return redirect()->back();
     }
@@ -63,7 +63,7 @@ class PostController extends Controller
     public function update(Request $request, Post $post)
     {
         $post->title=$request->title;
-        $post->content=$request->content;
+        $post->content=$request->content_post;
         $post->save();
         return redirect()->back();
     }

@@ -10,4 +10,6 @@ class repair extends Model
     use HasFactory;
 
     public $timestamps=false;
+
+    protected $fillable= ['name','telephone','car','comment','price','done'];
 }

@@ -12,7 +12,7 @@
                   </div>
                   <div class="form-group">
                     <label>Content post</label>
-                    <input name="content" type="text" class="form-control" value="{{$post['content']}}">
+                    <input name="content_post" type="text" class="form-control" value="{{$post['content']}}">
                   </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
