@@ -28,8 +28,8 @@
   <link href="/assets/dist/css/colorbox.css" rel="stylesheet">
   <link rel="website icon" href="/assets/images/circle.png">
 
-  <link rel="stylesheet" href="/assets/css/admin.css">
-  <link rel="stylesheet" href="/assets/css/member.css">
+  <link rel="stylesheet" href="/assets/css/admin/admin.css">
+  <link rel="stylesheet" href="/assets/css/admin/members/member.css">
   @inject('adminPanel', 'App\Services\AdminPanel')
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -204,6 +204,23 @@
                 <a href="{{route('members.create')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Add members</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+            <i class="fa-regular fa-circle-question"></i>
+              <p>
+                Ask Questions
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{route('contact.index')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>All questions</p>
                 </a>
               </li>
             </ul>

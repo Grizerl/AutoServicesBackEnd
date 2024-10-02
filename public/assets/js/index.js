@@ -41,3 +41,21 @@ const swiper_2 = new Swiper('.swiper-2', {
     prevEl: '.swiper-button-prev-2',
   },
 });
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('client-say-link').addEventListener('click', function (e) {
+        e.preventDefault();
+        window.location.href = '/AutoStyle#client-say';  
+    });
+});
+document.addEventListener("DOMContentLoaded",()=>{
+window.addEventListener('load', function () {
+    if (window.location.hash) {
+        const element = document.querySelector(window.location.hash);
+        if (element) {
+            element.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    }
+    });
+});

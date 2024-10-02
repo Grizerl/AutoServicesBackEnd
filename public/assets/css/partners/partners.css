@@ -1,0 +1,195 @@
+:root {
+    --clr-white: #FFFFFF;
+    --clr-white-light: #fff;
+    --clr-black: #000000;
+    --clr-black-charter-back:#1D1D1D;
+    --clr-black-light: #303030;
+    --clr-gray: #6c757d;
+    --clr-gray-black: #999;
+    --clr-gray-i-element:#555555;
+    --clr-gray-member: #F9F9F9;
+    --clr-red: #f13f3f;
+    --clr-red-title:#EE0E39;
+    --clr-red-btn: #db2d2e;
+    --transition-default: all .3s ease-in-out;
+    --font-family-stem: "Assistant", sans-serif;
+    --font-family-roboto: "Roboto", sans-serif;
+    --font-family-sans: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    font-style: normal;
+    font-family: var(--font-family-roboto);
+    margin: 15px 0;
+    line-height: 1.2;
+    font-weight: 700;
+    transition: .5s;
+    font-size: 25px;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+.banner-area {
+    height: 40vh;
+    width: 100%;
+    background: url('/assets/images/about-menu.jpg') no-repeat center bottom;
+    background-size: cover;
+    position: relative;
+}
+
+.banner-area:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.65;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+.sc-ttl-cont {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    font-size: 40px;
+    color: var(--clr-white);
+}
+.cont-list {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0 5px;
+    color: var(--clr-white);
+}
+.container-area, .container-nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container-nav-item {
+    flex-direction: row;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+}
+/* ----------------------------- */
+
+.charter-box-first,.charter-box-second
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+    margin: 45px;
+}
+.section-licenses-content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-licenses-content-title
+{
+    font-family: var(--font-family-roboto);
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+.section-licenses-content-title::after
+{
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    background: var(--clr-red-btn);
+    height: 3px;
+    width: 100%;
+}
+.charter-box-first-img,.charter-box-second-img
+{
+    text-align: center;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10vh;
+    margin-left: 10vh;
+}
+/* ---------------------- */
+.section-partners-container
+{
+    background: url('/assets/partners/banner-car.png');
+    background-size: cover;
+    background-color:#000000;
+    height: 95vh;
+}
+.partners-box-first,.partners-box-second
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 5vh 0vh 0vh 0vh;
+}
+
+.partners-box-first-img,.partners-box-second-img
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 6vh;
+    margin-left: 6vh;
+    background: var(--clr-black-charter-back);
+}
+.section-partners-title
+{
+    font-family:var(--font-family-roboto);
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--clr-white);
+    padding-top: 6vh;
+    position: relative;
+    display: inline-block;
+}
+.section-partners-title::after
+{
+    content: "";
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background: var(--clr-red-btn);
+}
+.logo-partners
+{
+    width: 230px;
+    height: 185px;
+}
+.title-company
+{
+    font-family: var(--font-family-roboto);
+    font-weight: 500;
+    font-size: 16px;
+    margin: 15px;
+    color: var(--clr-white);
+}
