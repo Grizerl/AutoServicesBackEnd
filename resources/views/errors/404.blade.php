@@ -1,7 +1,9 @@
 @extends('layouts.auto_layouts')
 @section('title', 'Автосервіс - Car Services and Mechanic')
 @section('link')
+<link rel="stylesheet" href="{{ asset('assets/css/index.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/error.css') }}">
+<script src="{{ asset('assets/js/index.js') }}"></script>
 @endsection
 @section('content')
 <div>

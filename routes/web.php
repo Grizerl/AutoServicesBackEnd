@@ -31,7 +31,7 @@ Route::prefix('AutoStyle')->group(function () {
 
 Route::get('AdminPanel', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::middleware('role:Admin')->prefix('admin-panel')->group(function(){ 
+Route::middleware('role:Admin')->prefix('Admin/Panel')->group(function(){ 
     Route::get('/',[App\Http\Controllers\Admin\AdminController::class, 'index'])->name('admin-home');
     Route::resource('post', PostController::class);
     Route::resource('client', ClientController::class);

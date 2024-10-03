@@ -58,6 +58,9 @@
         <a href="{{route('members.index')}}" class="nav-link">Members</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
+        <a href="{{route('contact.index')}}" class="nav-link">Ask Questions</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
         <a href="{{route('repair.index')}}" class="nav-link">Help with car</a>
       </li>
     </ul>
