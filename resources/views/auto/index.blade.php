@@ -10,24 +10,28 @@
                 <div class="swiper-wrapper"> 
                     <!-- First slide -->
                     <div class="swiper-slide"> 
-                        <div class="back-img-slide-1"> 
-                            <div class="slide-1-content"> 
-                                <h2 class="slide-1-title">Technicians<br>for service</h2>
-                                <p class="slide-1-text">Perspicis unde omne iste natus error sit voluptatem acntium<br>
-                                doloremque laudanum totam</p>
-                                <a class="slide-1-btn" href="#contacts">Book An Appointment</a>
+                        <div class="back-img-slide-1">
+                           <div class="container">
+                              <div class="slide-1-content"> 
+                                 <h2 class="slide-1-title">Technicians<br>for service</h2>
+                                 <p class="slide-1-text">Perspicis unde omne iste natus error sit voluptatem acntium<br>
+                                 doloremque laudanum totam</p>
+                                 <a class="slide-1-btn" href="#contacts">Book An Appointment</a>
                             </div>
+                           </div>
                         </div>
                     </div>
                     <!-- Second slide -->
                     <div class="swiper-slide"> 
                         <div class="back-img-slide-2"> 
-                            <div class="slide-2-content"> 
+                           <div class="container">
+                           <div class="slide-2-content"> 
                                 <h2 class="slide-2-title">Best mechanical<br>for service</h2>
                                 <p class="slide-2-text">Perspicis unde omne iste natus error sit voluptatem acntium<br>
                                 doloremque laudanum totam</p>
                                 <a class="slide-2-btn" href="{{route('vision')}}">More Information +</a>
                             </div>
+                           </div>
                         </div>
                     </div>
                 </div>
@@ -40,8 +44,9 @@
 </aside>
 
 <section id="about"> <!-- About section -->
-    <div class="section-about-card-content"> 
-        <div class="card-list"> 
+    <div class="section-about-card-content">
+      <div class="container">
+         <div class="card-list"> 
             <!-- Appointment Card -->
             <div class="card"> 
                 <div><i class="fa-solid fa-car-rear"></i></div> 
@@ -69,12 +74,15 @@
                     <div class="card-pseudo-btn"><a href="{{route('contacts')}}">Contact Us</a></div>
                 </div>
             </div>
-        </div>
+         </div>
+      </div>
     </div>
     
-    <aside data-aos="fade-up"> <!-- Aside section with animation -->
+    <aside> <!-- Aside section with animation -->
         <div class="aside-container-section-card">
-            <div style="width: 40%;">
+         <div class="container">
+            <div class="sc-AbOgs">
+            <div>
                 <span class="aside-subtitle">About the company</span>
                 @foreach ($post as $posts) 
                     <h1 class="aside-title">{!! str_replace('To', 'To<br>', e($posts->title)) !!}</h1>
@@ -88,6 +96,8 @@
                 <img class="img-aside-one" src="/assets/images/circle-one.jpg" alt="a man who cuts a car">
                 <img class="img-aside-two" src="/assets/images/circle-two.jpg" alt="tools">
             </div>
+            </div>
+         </div>
         </div>
     </aside>
 </section>
@@ -95,11 +105,12 @@
 <section id="support"> <!-- Support section -->
    <div class="section-support-container">
       <div class="section-support-content">
+         <div class="container">
          <div class="section-support-content-title">
             <h2 class="section-support-title">OUR SUPPORT</h2>
             <h3 class="section-support-subtitle">Our Provided Service</h3>
          </div>
-         <div data-aos="fade-up" class="card-support-list">
+         <div class="card-support-list">
             <div class="card-support">
                <i class="fa-solid fa-screwdriver-wrench"></i>
                <h2>Repair & Change</h2>
@@ -115,8 +126,6 @@
                <h2>Confirm For Services</h2>
                <p class="card-p cd-p">One-time purchase info the amount more international friendly doctors</p>
             </div>
-         </div>
-         <div data-aos="fade-up" class="card-support-list cd-lt-sup">
             <div class="card-support">
                <i class="fa-solid fa-hammer"></i>
                <h2>Warranty on Service</h2>
@@ -133,6 +142,8 @@
                <p class="card-p cd-p">One-time purchase info the amount more international friendly doctors</p>
             </div>
          </div>
+        
+         </div>
       </div>
    </div>
 </section>
@@ -140,86 +151,91 @@
 <section> <!-- Advantages section -->
    <div>
       <div class="section-advantages-conteiner">
-         <div>
-            <h1 class="section-advantages-title">OUR ADVANTAGES</h1>
-         </div>
-         <div class="section-advantages-card-content">
-            <div data-aos="fade-right" class="section-advantages-card-list">
-               <div><i class="fa-solid fa-headset fa-i" aria-hidden="true"></i></div>
+         <div class="container">
+            <div>
+               <h1 class="section-advantages-title">OUR ADVANTAGES</h1>
+            </div>
+            <div class="section-advantages-card-content">
+               <div class="section-advantages-card-list">
+               <div><i class="fa-solid fa-headset fa-i"></i></div>
                <div>
                   <h3 class="section-advantages-card-title">QUALITY SUPPORT</h3>
                   <p class="section-advantages-card-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
                </div>
-            </div>
-            <div data-aos="fade-left" class="section-advantages-card-list sc-cd-lt-tw">
-               <div><i class="fa-solid fa-gears fa-i" aria-hidden="true"></i></div>
+               </div>
+               <div class="section-advantages-card-list">
+               <div><i class="fa-solid fa-gears fa-i"></i></div>
                <div>
                   <h3 class="section-advantages-card-title">SERVICE VARIETY</h3>
                   <p class="section-advantages-card-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
                </div>
-            </div>
-         </div>
-         <div class="section-advantages-card-content">
-            <div data-aos="fade-right" class="section-advantages-card-list sn-cd-lt">
-               <div><i class="fa-solid fa-life-ring fa-i" aria-hidden="true"></i></div>
+               </div>
+               <div class="section-advantages-card-list">
+               <div><i class="fa-solid fa-life-ring fa-i"></i></div>
                <div>
                   <h3 class="section-advantages-card-title">LIFETIME WARRANTY</h3>
                   <p class="section-advantages-card-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
                </div>
-            </div>
-            <div data-aos="fade-left" class="section-advantages-card-list sn-cd-lt">
-               <div><i class="fa-solid fa-car-rear fa-i" aria-hidden="true"></i></div>
+               </div>
+               <div class="section-advantages-card-list">
+               <div><i class="fa-solid fa-car-rear fa-i"></i></div>
                <div>
                   <h3 class="section-advantages-card-title">CAR MAKES</h3>
                   <p class="section-advantages-card-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
                </div>
+               </div>
+            </div>
+            <div class="sc-CoNtn">
+               <a class="section-advantages-card-btn" href="{{route('history')}}">ADVANTAGES MORE</a>
             </div>
          </div>
-         <a class="section-advantages-card-btn sc-cd-btn" href="{{route('history')}}">ADVANTAGES MORE</a>
       </div>
    </div>
 </section>
 
-<section data-aos="fade-up" id="client-say"> <!-- Client testimonials section -->
+<section id="client-say"> <!-- Client testimonials section -->
    <div class="section-client-container">
-      <div class="section-client-content">
-         <h2 class="section-client-title">Hackery</h2>
-         <h3 class="section-client-subtitle">Our Client Says</h3>
-         <p class="section-client-text">
-            Quality auto repair services. Vehicle owners in the Derrick, MD area should be well aware of the Dynamic automotive brand of service. We strive to go above and beyond for our customers.
-         </p>
-      </div>
-   </div>
-   <div class="swiper mySwiper"> <!-- Swiper for client testimonials -->
-      <div class="swiper-wrapper">
-         @foreach ($client as $item)
-         <div class="swiper-slide sr-r">
-            <div class="swiper-slide-content">
-               <div class="slider-client-content">
-                  <img id="swiper-img-box" src="./assets/images/hackery-user.png" alt="User Male Icon">
-                  <div>
-                     <h6 class="swiper-name-box">{{ $item['name'] }}</h6>
-                     <span class="swiper-role-box">{{ $item['role'] }}</span>
+      <div class="container">
+         <div class="section-client-content">
+            <h2 class="section-client-title">Hackery</h2>
+            <h3 class="section-client-subtitle">Our Client Says</h3>
+               <p class="section-client-text">
+                  Quality auto repair services. Vehicle owners in the Derrick, MD area should be well aware of the Dynamic automotive brand of service. We strive to go above and beyond for our customers.
+               </p>
+         </div>
+         <div class="swiper mySwiper"> <!-- Swiper for client testimonials -->
+            <div class="swiper-wrapper">
+               @foreach ($client as $item)
+                  <div class="swiper-slide sr-r">
+                     <div class="swiper-slide-content">
+                        <div class="slider-client-content">
+                           <div>
+                              <img  class="swiper-img-box" src="./assets/images/hackery-user.png" alt="User Male Icon">
+                           </div>
+                        <div>
+                           <h6 class="swiper-name-box">{{ $item['name'] }}</h6>
+                           <span class="swiper-role-box">{{ $item['role'] }}</span>
+                        </div>
+                        </div>
+                     <p class="swiper-text-box">{{ $item['commentars'] }}</p>
+                     <div class="star-container">
+                        <h5 class="swiper-date-box">{{ $item['formatted_date'] }}</h5>
+                           <ul class="star-content">
+                              <li><i class="fa-solid fa-star"></i></li>
+                              <li><i class="fa-solid fa-star"></i></li>
+                              <li><i class="fa-solid fa-star"></i></li>
+                              <li><i class="fa-solid fa-star"></i></li>
+                              <li><i class="fa-solid fa-star"></i></li>
+                           </ul>
+                     </div>
+                     </div>
                   </div>
-               </div>
-               <p class="swiper-text-box">{{ $item['commentars'] }}</p>
-               <div class="star-container">
-                  <h5 class="swiper-date-box">{{ $item['formatted_date'] }}</h5>
-                  <ul class="star-content">
-                     <li><i class="fa-solid fa-star"></i></li>
-                     <li><i class="fa-solid fa-star"></i></li>
-                     <li><i class="fa-solid fa-star"></i></li>
-                     <li><i class="fa-solid fa-star"></i></li>
-                     <li><i class="fa-solid fa-star"></i></li>
-                  </ul>
-               </div>
+               @endforeach
             </div>
          </div>
-         @endforeach
       </div>
    </div>
 </section>
-
 <section style="margin-top: 10vh;"> <!-- Before and after image slider -->
    <div class="swiper-2">
       <div class="swiper-wrapper">
