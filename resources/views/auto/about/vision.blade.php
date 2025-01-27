@@ -31,7 +31,7 @@
    </div>
    <section>
    <div>
-      <div>
+      <div class="container">
          <div style="display: flex; align-items: center; justify-content: center; flex-direction: column; ">
          <h1 class="section-about-news-title">НОВИНИ</h1>
          <p class="section-about-news-subtitle">Слідкуйте за новинами Pro auto</p>

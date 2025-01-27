@@ -27,23 +27,23 @@
       </div>
    </div>
 <section>
-   <div>
-      <div>
+   <div class="gallery-container">
+      <div class="container">
          <div>
             <div style="display: flex; align-items: center; justify-content: center; flex-direction: column; ">
             <h1 class="section-gallery-title">Автотовари: Аксесуари,<br> Розхідники та Багато Іншого</h1>
             <h3 class="section-gallery-subtitle">PROAuto - це спеціалізований інтернет магазин затребуваних <br> товарів для автомобілів.</h3>
             </div>
-            <div>
+            <div class="grid-box">
                <div class="first-box">
-                  <img class="gallery-first-box" src="/assets/images/gallery1.png" alt="">
-                  <img class="gallery-first-box" src="/assets/images/gallery2.png" alt="">
-                  <img class="gallery-first-box" src="/assets/images/gallery3.png" alt="">
+                  <img class="gallery-img" src="/assets/images/gallery1.png" alt="gallery-img">
+                  <img class="gallery-img" src="/assets/images/gallery2.png" alt="gallery-img">
+                  <img class="gallery-img" src="/assets/images/gallery3.png" alt="gallery-img">
                </div>
                <div class="second-box">
-                  <img class="gallery-second-box" src="/assets/images/gallery4.png" alt="">
-                  <img class="gallery-second-box" src="/assets/images/gallery5.png" alt="">
-                  <img class="gallery-second-box" src="/assets/images/gallery6.png" alt="">
+                  <img class="gallery-img" src="/assets/images/gallery4.png" alt="gallery-img">
+                  <img class="gallery-img" src="/assets/images/gallery5.png" alt="gallery-img">
+                  <img class="gallery-img" src="/assets/images/gallery6.png" alt="gallery-img">
                </div>
             </div>
          </div>
@@ -53,7 +53,7 @@
 <section>
    <div>
       <div class="section-about-company">
-         <div>
+         <div class="container">
             <h1 class="section-about-company-title">Про компанію</h1>
             <div class="section-form-container">
                <p>

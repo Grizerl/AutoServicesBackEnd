@@ -29,21 +29,23 @@
    </div>
 <section>
     <div class="section-licenses-container">
-        <div class="section-licenses-content">
-            <h1 class="section-licenses-content-title">Ліцензії</h1>
-        </div>
+        <div class="container">
+            <div class="section-licenses-content">
+                <h1 class="section-licenses-content-title">Ліцензії</h1>
+            </div>
             <div class="section-charter-container">
                 <div class="charter-box-first">
                     <div class="charter-box-first-img"> <img  src="/assets/partners/charter.png" alt="Charter"><span>Офіційний дистриб'ютор матеріалів марки ELF</span></div>
                     <div class="charter-box-first-img"> <img src="/assets/partners/charter.png" alt="Charter"><span>Офіційний дистриб'ютор матеріалів марки Moly</span></div>
-                    <div class="charter-box-first-img"> <img  src="/assets/partners/charter.png" alt="Charter"><span>Офіційний партнер Castrol</span></div>
+                    <div class="charter-box-first-img"> <img  src="/assets/partners/charter.png" alt="Charter"><span>Офіційний дистриб'ютор матеріалів марки Castrol</span></div>
                 </div>
                 <div class="charter-box-second">
-                <div class="charter-box-second-img"> <img  src="/assets/partners/charter.png" alt="Charter"><span>Офіційний дистриб'ютор матеріалів марки ШЕЛЛ</span></div>
-                <div class="charter-box-second-img"> <img  src="/assets/partners/charter.png" alt="Charter"><span>Офіційний дистриб'ютор матеріалів марки Mobil</span></div>
-                <div class="charter-box-second-img"> <img  src="/assets/partners/charter.png" alt="Charter"><span>Офіційний дистриб'ютор матеріалів марки Motul</span></div>
+                    <div class="charter-box-second-img"> <img  src="/assets/partners/charter.png" alt="Charter"><span>Офіційний дистриб'ютор матеріалів марки ШЕЛЛ</span></div>
+                    <div class="charter-box-second-img"> <img  src="/assets/partners/charter.png" alt="Charter"><span>Офіційний дистриб'ютор матеріалів марки Mobil</span></div>
+                    <div class="charter-box-second-img"> <img  src="/assets/partners/charter.png" alt="Charter"><span>Офіційний дистриб'ютор матеріалів марки Motul</span></div>
                 </div>
             </div>
+        </div>
     </div>
 </section>
 <section>

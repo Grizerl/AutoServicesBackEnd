@@ -1,3 +1,8 @@
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
+
 :root {
     --clr-white: #FFFFFF;
     --clr-white-light: #fff;
@@ -23,13 +28,15 @@ h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     transition: .5s;
     font-size: 25px;
 }
-html
-{
+
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     scroll-behavior: smooth;
+    
 }
-body {
-    margin: 0px;
-}
+
 
 ul {
     list-style-type: none;
@@ -102,9 +109,7 @@ li {
     z-index: 2;
 }
 .swiper-news-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    text-align: center;
     padding: 20px;
     box-sizing: border-box;
     overflow: hidden;
@@ -184,15 +189,12 @@ li {
 .swiper-button-prev {
     color: var(--clr-red-btn);
     background-color: var(--clr-white);
-    padding: 10px;
     border: 3px solid var(--clr-red-btn); 
     border-radius: 3px; 
     cursor: pointer;
     text-transform: uppercase;
     transition: background-color 0.3s ease;
     margin-top: 20px; 
-    height: 30px; 
-    width: 30px;
 }
 /* Кнопки розміщуються під текстом і розсунуті */
 .swiper-button-next {
@@ -248,7 +250,6 @@ li {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 50%;
     border-bottom: 2px solid var(--clr-white);
 }
 .hd-cont-hidden

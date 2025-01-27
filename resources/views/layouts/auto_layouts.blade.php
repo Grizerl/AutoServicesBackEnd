@@ -149,10 +149,12 @@
 
 <footer>
 <div class="footer-container">
-    <!-- Skills Section -->
-    <div class="copy">
+   
+        <div class="footer-flex">
+        <div class="copy">
         <h3 class="copy-title">Skills</h3>
         <div class="copy-list">
+           
             <span class="copy-link">Sale of cars</span>
             <span class="copy-link">Сar repair</span>
         </div>
@@ -167,8 +169,7 @@
                 <span class="copy-link">Avtoforum.ua</span>
             </div>
         </div>
-   </div>
-
+        </div>
      <!-- Partners Section -->
      <div class="copy">
             <h3 class="copy-title">Partners</h3>
@@ -205,6 +206,7 @@
                 <span class="copy-link">Producing Future Beats</span>
             </div>
         </div>
+        </div>
     </div>
 
     <!-- Copyright Section -->
@@ -232,7 +234,6 @@
     </aside>
 </footer>
 </div>
-
 <script>AOS.init();</script>
 <script src="./assets/js/index.js"></script>
 </body>

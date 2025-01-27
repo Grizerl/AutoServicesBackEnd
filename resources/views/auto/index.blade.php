@@ -9,7 +9,7 @@
             <div class="swiper-1"> <!-- Swiper for slides -->
                 <div class="swiper-wrapper"> 
                     <!-- First slide -->
-                    <div class="swiper-slide"> 
+                    <div class="swiper-slide sc-ban-slide"> 
                         <div class="back-img-slide-1">
                            <div class="container">
                               <div class="slide-1-content"> 
@@ -22,7 +22,7 @@
                         </div>
                     </div>
                     <!-- Second slide -->
-                    <div class="swiper-slide"> 
+                    <div class="swiper-slide sc-ban-slide"> 
                         <div class="back-img-slide-2"> 
                            <div class="container">
                            <div class="slide-2-content"> 
@@ -203,17 +203,17 @@
                   Quality auto repair services. Vehicle owners in the Derrick, MD area should be well aware of the Dynamic automotive brand of service. We strive to go above and beyond for our customers.
                </p>
          </div>
-         <div class="swiper mySwiper"> <!-- Swiper for client testimonials -->
+         <div class="swiper mySwiper sc-ClieSwip"> <!-- Swiper for client testimonials -->
             <div class="swiper-wrapper">
                @foreach ($client as $item)
-                  <div class="swiper-slide sr-r">
+                  <div class="swiper-slide">
                      <div class="swiper-slide-content">
                         <div class="slider-client-content">
-                           <div>
-                              <img  class="swiper-img-box" src="./assets/images/hackery-user.png" alt="User Male Icon">
+                           <div class="img-slider-container">
+                              <img class="swiper-img-box" src="./assets/images/hackery-user.png" alt="User Male Icon">
                            </div>
                         <div>
-                           <h6 class="swiper-name-box">{{ $item['name'] }}</h6>
+                           <h6 style="text-align: center;" class="swiper-name-box">{{ $item['name'] }}</h6>
                            <span class="swiper-role-box">{{ $item['role'] }}</span>
                         </div>
                         </div>
@@ -236,17 +236,17 @@
       </div>
    </div>
 </section>
-<section style="margin-top: 10vh;"> <!-- Before and after image slider -->
+<section class="car-section"> <!-- Before and after image slider -->
    <div class="swiper-2">
       <div class="swiper-wrapper">
          <div class="swiper-slide">
             <div>
-               <img style="width: 100%;" src="./assets/images/before.jpg" alt="Car before">
+               <img src="./assets/images/before.jpg" alt="Car before">
             </div>
          </div>
          <div class="swiper-slide">
             <div>
-               <img style="width: 100%;" src="./assets/images/after.jpg" alt="Car after">
+               <img src="./assets/images/after.jpg" alt="Car after">
             </div>
          </div>
       </div>
@@ -259,19 +259,27 @@
    </div>
 </section>
 
-<section data-aos="fade-up"> <!-- Team members section -->
+<section> <!-- Team members section -->
    <div class="section-member-container">
+      <div class="container">
       <h3 class="section-member-title">Our Talent Member</h3>
-      <div class="swiper mySwiper">
+      <div class="swiper mySwiper SwiperTeam">
          <div class="swiper-wrapper">
             @foreach ($members as $member)
-            <div class="swiper-slide sr-r">
-               <img class="member-img" src="{{$member['img']}}" alt="">
-               <h3>{{$member['name']}}</h3>
-               <span class="section-member-role">{{$member['role']}}</span>
+            <div class="swiper-slide">
+               <div class="team-container">
+                  <div>
+                     <img class="member-img" src="{{$member['img']}}" alt="Сompany team">
+                  </div>
+                  <div class="media-team-container">
+                     <h3>{{$member['name']}}</h3>
+                     <span class="section-member-role">{{$member['role']}}</span>
+                  </div>
+               </div>
             </div>
             @endforeach
          </div>
+      </div>
       </div>
    </div>
 </section>
@@ -282,12 +290,11 @@
          <div class="">
             <img style="width: 80%;" src="./assets/images/Contact.png" alt="Car Mercedes-Benz">
          </div>
-         <div data-aos="fade-up-left" class="section-contact-container-form">
+         <div class="section-contact-container-form">
             <h1 class="section-contact-container-title">Contact us</h1>
             <h2 class="section-contact-container-subtitle">Get In Touch</h2>
             <form action="{{route('repair.store')}}" method="post" novalidate>
                @csrf
-
                <input name="name" type="text" placeholder="Your name*">
                @if($errors->has('name'))
                <div style="color: red; font-size: large;" class="alert alert-danger">{{$errors->first('name')}}</div>
@@ -316,16 +323,17 @@
 </section>
 
 <section> <!-- Contact info section -->
-   <div>
-      <div class="aside-container-main-info">
-         <div class="aside-content-info">
+   <div class="aside-container-main-info">
+      <div class="container">
+         <div class="gc-3">
+            <div class="aside-content-info">
             <i class="fa-solid fa-map-location-dot fa-icon-info"></i>
             <div>
                <h3 class="aside-container-title">ADDRESS:</h3>
                <p class="aside-container-info">Mulatol Pakar Matha, Dhaka Bus<br> Stand Road, 5400</p>
             </div>
-         </div>
-         <div class="aside-content-info">
+            </div>
+            <div class="aside-content-info">
             <i class="fa-solid fa-phone-volume fa-icon-info"></i>
             <div>
                <h3 class="aside-container-title">PHONES:</h3>
@@ -336,12 +344,13 @@
                   <a style="color:#fff" href="tel:0950564505">+380 95 056 46 05</a>
                </p>
             </div>
-         </div>
-         <div class="aside-content-info">
+            </div>
+            <div class="aside-content-info">
             <i class="fa-solid fa-calendar-check fa-icon-info"></i>
             <div>
                <h3 class="aside-container-title">WORKING TIME:</h3>
                <p class="aside-container-info">Monday–Saturday: 08:00–18:00;<br> Friday - Closed</p>
+            </div>
             </div>
          </div>
       </div>

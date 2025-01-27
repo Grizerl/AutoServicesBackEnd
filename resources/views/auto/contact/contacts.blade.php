@@ -25,7 +25,7 @@
 </div>
 <section style="margin-top: 6vh; margin-bottom: 8vh">
    <div>
-      <div>
+      <div class="container">
          <div style=" display: flex; align-items: center; justify-content: center; flex-direction: column;">
             <h1 class="title-contact-page">КОНТАКТИ</h1>
             <h3 class="subtitle-contact-page">Автосервіс та автомастила в Києві</h3>
@@ -63,6 +63,7 @@
 <section>
    <div>
       <div class="section-header-ask-question-banner">
+         <div class="container">
          <div style=" display: flex; align-items: center; justify-content: center; flex-direction: column;">
             <h1 class="title-question-page">ЗАДАТИ ПИТАННЯ</h1>
             <h3 class="subtitle-question-page">Менеджери компанії з радістю дадуть відповіді на ваші <br> запитання і допоможуть з вибором.</h3>
@@ -95,6 +96,7 @@
 
             </form>
             
+         </div>
          </div>
       </div>
    </div>
