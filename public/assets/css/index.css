@@ -156,7 +156,7 @@ a
     position: absolute;
     z-index: 9999;
     top: 170%;
-    left: 0;
+    /* left: 0; */
     width: 197px;
     text-align: left;
     margin: 0;
@@ -206,7 +206,7 @@ a
 .container {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 1.6rem;
+    padding: 0 1.5rem;
 }
 .swiper-button-prev,.swiper-button-next
 {
@@ -1004,4 +1004,284 @@ form input,.section-contact-form-comment
 .aside-copyright-list a:hover
 {
     color: var(--clr-red-btn);
+}
+
+.burger-menu,.menu-container {
+    display: none;
+}
+@media screen and (max-width:1540px) {
+    .back-img-slide-1,.back-img-slide-2,.section-support-container  {
+        background-size: cover;
+    }
+
+    .section-contact-container-form {
+        width: 35%;
+    }
+
+    .sc-Banprev,.sc-Bannext {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .sc-AbOgs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        text-align: center;
+    }
+
+    .aside-text {
+        width: 100%;
+    }
+
+    .card-list {
+        gap: 20px;
+    }
+
+    .card {
+        padding: 50px 15px 50px;
+    }
+
+    .aside-copyright {
+        width: 90%;
+    }
+
+    .gc-3 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+@media screen and (max-width:1000px) {
+    .nav-bar-collapse {
+        display: none;
+    }
+
+    .nav-content, .navbar-content, .nav-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu-container {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0px;
+        height: 100%;
+        width: 375px;
+        background-color: var(--clr-white);
+        opacity: 0;
+        transition: transform 0.3s ease-in-out; 
+        z-index: 999;
+    }
+
+    .menu-container.active {
+      opacity: 1;
+      }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .menu {
+        padding: 20px 0px;
+    }
+
+    .sc-FAFfgd {
+        display: block; 
+        position: absolute;
+        z-index: 9999;
+        top: 100%;
+        left: 0;
+        width: 197px;
+        text-align: left;
+        margin: 0;
+        padding: 15px 0;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+        background-color: var(--clr-white);
+        border: 1px solid #ccc;
+        opacity: 0; 
+        visibility: hidden; 
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+    
+    .sc-FAFfgd > a {
+        color: var(--clr-black-light);
+    }
+    
+    
+    
+    .menu-item:hover .sc-FAFfgd {
+        opacity: 1; /* Робимо видимим при hover */
+        visibility: visible; /* Відображаємо меню */
+    }
+    .close-btn {
+        text-align: right;
+        font-size: 2.5rem;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .adaptive-item,.adaptive-link
+    {
+        font-family: var(--font-family-roboto);
+        font-size: 17.5px;
+        font-weight: 600;
+        padding: 15px 5px;
+        background-color: var(--clr-red);
+       
+    }
+    .sc-FDFgh {
+        color: var(--clr-white);
+    }
+    .adaptive-link {
+        padding: 15px 15px;
+        color: var(--clr-white);
+    }
+    .adaptive-item {
+        border-bottom: 1px solid var(--clr-red-btn);
+    }
+
+    .adaptive-link-number {
+        color: var(--clr-white);
+       
+    }
+
+    .adaptive-logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    .footer-flex {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .copy-list {
+        display: flex;
+        align-items: center;
+    }
+
+    .copy-title {
+        text-align: center;
+    }
+
+    .card-support-list {
+        gap: 15px;
+    }
+
+    .aside-copyright {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sc-Fvrha {
+        display: none;
+    }
+
+    .section-contact-container-form {
+        width: 90%;
+    }
+
+    .section-contact-container-title {
+        color: var(--clr-black);
+    }
+
+    .section-contact-container-subtitle {
+        color: var(--clr-white);
+    }
+}
+
+@media screen and (max-width:775px) {
+    .row{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .slide-1-title, .slide-2-title {
+        font-size: 4.5rem;
+    }
+
+    .card-support-list,.card-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-advantages-card-content,.gc-3 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card-support-list, .card-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section-about-card-content {
+        display: block;
+    }
+
+    .star-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .advertising-line, .row, .top-left, .top-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .section-support-subtitle,.section-client-subtitle  {
+        text-align: center;
+        font-size: 40px;
+        padding: 5px 0;
+    }
+
+    .slide-1-content,.slide-2-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .slide-1-text, .slide-2-text,.slide-1-title, .slide-2-title {
+        text-align: center;
+    }
+
+    .section-member-title {
+        text-align: center;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .footer-flex {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+    .aside-copyright-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slide-1-title, .slide-2-title {
+        font-size: 60px;
+    }
+
+    .slide-1-content, .slide-2-content {
+        margin-top: 8rem;
+    }
 }

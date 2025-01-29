@@ -180,3 +180,24 @@ li {
     background: var(--clr-red-btn);
 }
 
+@media screen and (max-width:1210px) {
+    .shop_content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .shop_content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .container {
+        padding: 0px 0px;
+    }
+}

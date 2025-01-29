@@ -45,7 +45,6 @@ a {
 
 /* Оформлення для секції помилки */
 .section-error-area {
-    height: 85vh;
     width: 100%;
     background: url('/assets/images/error-baner.png') no-repeat center center;
     background-size: cover;
@@ -55,6 +54,7 @@ a {
 .section-media-container {
     display: flex;
     flex-direction: column;
+    padding-bottom: 15vh;
 }
 
 /* Стиль заголовку */
@@ -119,4 +119,10 @@ a {
 .media-psevdo-btn:hover {
     border-radius: 15px;
     background: var(--clr-red-btn);
+}
+
+@media screen and (max-width:700px) {
+    .media-title,.media-text-info,.media-text,.media-psevdo-btn {
+        margin-left: 0vh;
+    }
 }

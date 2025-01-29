@@ -156,7 +156,6 @@ color: var(--clr-white);
     font-family: var(--font-family-sans);
     font-size: 16px;
     font-weight: 500;
-    margin-left: 4.5vh;
     color: var(--clr-white);
 }
 /* ------------------------- */
@@ -166,10 +165,11 @@ color: var(--clr-white);
 }
 .section-header-ask-question-banner
 {
+    padding-top: 20px;
+    padding-bottom: 40px;
     background: url('/assets/partners/banner-car.png');
     background-size: cover;
     background-color:#000000;
-    height: 85vh;
 }
 .title-question-page,.subtitle-question-page
 {
@@ -253,4 +253,28 @@ color: var(--clr-white);
 {
     border-radius: 15px;
     background: var(--clr-red-btn);
+}
+
+@media screen and (max-width:930px) {
+    .section-contact-header-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .section-contact-info-container,.contact-map,.section-contact-googl-maps {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .form-ask-question {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contact-title-main-info,.fa-contac {
+        margin-left: 1vh;
+    }
 }

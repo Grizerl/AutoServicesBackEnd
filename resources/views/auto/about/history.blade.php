@@ -28,7 +28,7 @@
    </div>
 <section>
    <div class="gallery-container">
-      <div class="container">
+      <div>
          <div>
             <div style="display: flex; align-items: center; justify-content: center; flex-direction: column; ">
             <h1 class="section-gallery-title">Автотовари: Аксесуари,<br> Розхідники та Багато Іншого</h1>

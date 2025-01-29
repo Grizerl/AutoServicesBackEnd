@@ -36,8 +36,8 @@
                     </div>
                 </div>
                 <!-- Navigation buttons -->
-                <div class="swiper-button-prev"></div> 
-                <div class="swiper-button-next"></div> 
+                <div class="swiper-button-prev sc-Banprev"></div> 
+                <div class="swiper-button-next sc-Bannext"></div> 
             </div>
         </div>
     </div>
@@ -287,7 +287,7 @@
 <section id="contacts"> <!-- Contact form section -->
    <div class="section-contact-container">
       <div class="section-contact-content">
-         <div class="">
+         <div class="sc-Fvrha">
             <img style="width: 80%;" src="./assets/images/Contact.png" alt="Car Mercedes-Benz">
          </div>
          <div class="section-contact-container-form">

@@ -139,16 +139,16 @@ li {
 }
 .section-about-company
 {
+    padding: 4vh 0vh 20vh;
     background: url('/assets/images/porsche-normal.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80vh;
     position: relative;
 }
 .section-about-company::after
 {
     content: "";
-    height: 80vh;
+    height: 100%;
     width: 100%;
     background: #000000;
     top: 0px;
@@ -266,4 +266,18 @@ li {
     font-size: 16px;
     margin: 15px;
     color: var(--clr-white);
+}
+
+@media screen and (max-width: 450px) {
+    .section-about-company {
+        padding: 4vh 0vh 10vh;
+    }
+
+    .section-about-company-title {
+        padding-top: 5vh;
+    }
+
+    .gallery-img {
+        padding: 0vh;
+    }
 }

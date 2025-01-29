@@ -88,60 +88,117 @@
             </ul>
         </div>
     </div>
-    
     <!-- Main Container -->
     <div class="container">
-        <div class="navbar-content">
-            <div class="main-logo">
-                <h2 class="logo-slogan">Автосервіс</h2>
-            </div>
-            <div class="nav-bar-collapse">
-                <ul class="nav-content">
-                    <li class="nav-item">
-                        <a class="nav-link" tabindex="1" href="{{route('home_auto')}}">Home</a>
-                    </li>
-                    <li class="nav-item menu-item">
-                        <a class="nav-link" tabindex="2" id="about-link" href="#about">About us<i style="margin-left:3px;" class="fa-solid fa-caret-down"></i></a>
-                        <ul class="sub-menu">
-                            <li><a href="{{route('vision')}}">Сompany news</a></li>
-                            <li><a href="{{route('history')}}">About the company</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" tabindex="3" id="client-say-link" href="#client-say">Reviews</a>
-                    </li>
-                    <li class="nav-item menu-item">
-                        <a class="nav-link" tabindex="4" href="#contacts">Contacts <i style="margin-left:3px;" class="fa-solid fa-caret-down"></i></a>
-                        <ul class="sub-menu">
-                            <li>
-                                <a href="{{route('contacts')}}">More detailed information</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item menu-item">
-                        <a class="nav-link" tabindex="5" href="#">Pages <i style="margin-left:3px;" class="fa-solid fa-caret-down"></i></a>
-                        <ul class="sub-menu">
-                            <li>
-                                <a href="{{route('offer')}}">Car for sale</a>
-                            </li>
-                            <li>
-                                <a href="{{route('plan')}}">Monthly subscription</a>
-                            </li>
-                            <li>
-                                <a href="{{route('partners')}}">Partners of the company</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <span class="nav-link lk-content">Cлужба продаж
-                            <div style="padding-top:5px;">
-                                <a href="tel:+380950660959" class="nav-link-number">+380 95 066 09 59</a> 
-                            </div>
-                        </span>
+    <div class="navbar-content">
+    <div class="main-logo">
+        <h2 class="logo-slogan">Автосервіс</h2>
+    </div>
+    <div class="nav-bar-collapse">
+        <ul class="nav-content">
+            <li class="nav-item">
+                <a class="nav-link" tabindex="1" href="{{route('home_auto')}}">Home</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" tabindex="2" id="about-link" href="#about">About us<i style="margin-left:3px;" class="fa-solid fa-caret-down"></i></a>
+                <ul class="sub-menu">
+                    <li><a href="{{route('vision')}}">Сompany news</a></li>
+                    <li><a href="{{route('history')}}">About the company</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" tabindex="3" id="client-say-link" href="#client-say">Reviews</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" tabindex="4" href="#contacts">Contacts <i style="margin-left:3px;" class="fa-solid fa-caret-down"></i></a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="{{route('contacts')}}">More detailed information</a>
                     </li>
                 </ul>
-            </div>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" tabindex="5" href="#">Pages <i style="margin-left:3px;" class="fa-solid fa-caret-down"></i></a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="{{route('offer')}}">Car for sale</a>
+                    </li>
+                    <li>
+                        <a href="{{route('plan')}}">Monthly subscription</a>
+                    </li>
+                    <li>
+                        <a href="{{route('partners')}}">Partners of the company</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <span class="nav-link lk-content">Cлужба продаж
+                    <div style="padding-top:5px;">
+                        <a href="tel:+380950660959" class="nav-link-number">+380 95 066 09 59</a> 
+                    </div>
+                </span>
+            </li>
+        </ul>
+    </div>
+    <!-- Бургер меню -->
+    <div class="burger-menu">
+        <span class="burger-icon">
+            <i class="fa-solid fa-bars"></i>
+        </span>
+    </div>
+    <!--  -->
+    <div class="menu-container">
+        <div class="adaptive-logo">
+            <h2 class="logo-slogan">Автосервіс</h2>
+            <div class="close-btn">&times;</div>
         </div>
+       
+        <ul class="menu">
+            <li class="adaptive-item">
+                <a class="nav-link sc-FDFgh" tabindex="1" href="{{route('home_auto')}}">Home</a>
+            </li>
+            <li class="adaptive-item menu-item">
+                <a class="nav-link sc-FDFgh" tabindex="2" id="about-link" href="#about">About us<i style="margin-left:3px;" class="fa-solid fa-caret-down"></i></a>
+                <ul class="sub-menu sc-FAFfgd">
+                    <li><a href="{{route('vision')}}">Сompany news</a></li>
+                    <li><a href="{{route('history')}}">About the company</a></li>
+                </ul>
+            </li>
+            <li class="adaptive-item">
+                <a class="nav-link sc-FDFgh" tabindex="3" id="client-say-link" href="#client-say">Reviews</a>
+            </li>
+            <li class="adaptive-item menu-item">
+                <a class="nav-link sc-FDFgh" tabindex="4" href="#contacts">Contacts <i style="margin-left:3px;" class="fa-solid fa-caret-down"></i></a>
+                <ul class="sub-menu sc-FAFfgd">
+                    <li>
+                        <a href="{{route('contacts')}}">More detailed information</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="adaptive-item menu-item">
+                <a class="nav-link sc-FDFgh" tabindex="5" href="#">Pages <i style="margin-left:3px;" class="fa-solid fa-caret-down"></i></a>
+                <ul class="sub-menu sc-FAFfgd">
+                    <li>
+                        <a href="{{route('offer')}}">Car for sale</a>
+                    </li>
+                    <li>
+                        <a href="{{route('plan')}}">Monthly subscription</a>
+                    </li>
+                    <li>
+                        <a href="{{route('partners')}}">Partners of the company</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="adaptive-item">
+                <span class="adaptive-link">Cлужба продаж</span>
+                    <div style="text-align: left;  margin-top: 20px;  margin-left: 15px; ">
+                        <a href="tel:+380950660959" class="adaptive-link-number">+380 95 066 09 59</a> 
+                    </div>
+                
+            </li>
+        </ul>
+    </div>
+</div>
     </div>
 </div>
 

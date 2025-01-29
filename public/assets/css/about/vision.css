@@ -310,3 +310,25 @@ li {
 {
     background: var(--clr-red-btn);
 }
+
+@media screen and (max-width:660px) {
+    .title-hidden {
+        margin-right: 0px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .title-hidden {
+        margin-right: 15px;
+    }
+
+    .according-bth {
+        margin-left: 0vh;
+    }
+
+    .date-sw-slide,.text-sw-slide {
+        text-align: center;
+    }
+
+}
