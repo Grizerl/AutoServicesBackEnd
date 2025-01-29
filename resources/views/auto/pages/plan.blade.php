@@ -25,7 +25,7 @@
                </li>
                <li  class="cont-list"><i class="fas fa-angle-right"></i></li>
                <li>
-                  <a  class="cont-list">price</a>
+                  <a  class="cont-list">Price</a>
                </li>
             </ul>
          </div>
@@ -43,13 +43,13 @@
         <div class="section-element-navbar-conteiner">
             <ul class="section-element-nav">
                 <li class="element-nav-item">
-                    <a id="btn-silver-plan" class="element-nav-link" href=""><strong>Silver Package</strong></a>
+                    <a id="btn-silver-plan" class="element-nav-link" ><strong>Silver Package</strong></a>
                 </li>
                 <li class="element-nav-item">
-                    <a id="btn-platinum-plan" class="element-nav-link active" href=""><strong>Platinum Package</strong></a>
+                    <a id="btn-platinum-plan" class="element-nav-link active" ><strong>Platinum Package</strong></a>
                 </li>
                 <li class="element-nav-item">
-                    <a id="btn-gold-plan" class="element-nav-link" href=""><strong>Gold Package</strong></a>
+                    <a id="btn-gold-plan" class="element-nav-link" ><strong>Gold Package</strong></a>
                 </li>
             </ul>
         </div>
@@ -70,22 +70,22 @@
                     <div class="conditions-part">
                         <ul>
                             <li>
-                                <a href="">Conventional Oil Change <i class="fa-regular fa-circle-xmark"></i></a>
+                                <a >Conventional Oil Change <i class="fa-regular fa-circle-xmark"></i></a>
                             </li>
                             <li>
-                                <a href="">Visual Brake Inspection <i class="fa-solid fa-check"></i></a>
+                                <a >Visual Brake Inspection <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Transmission Fluid Service <i class="fa-regular fa-circle-xmark"></i></a>
+                                <a >Transmission Fluid Service <i class="fa-regular fa-circle-xmark"></i></a>
                             </li>
                             <li>
-                                <a href="">Fuel System Cleaning <i class="fa-solid fa-check"></i></a>
+                                <a >Fuel System Cleaning <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Battery Check <i class="fa-regular fa-circle-xmark"></i></a>
+                                <a >Battery Check <i class="fa-regular fa-circle-xmark"></i></a>
                             </li>
                             <li>
-                                <a href="">Tire Rotation <i class="fa-regular fa-circle-xmark"></i></a>
+                                <a >Tire Rotation <i class="fa-regular fa-circle-xmark"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -105,22 +105,22 @@
                     <div  class="conditions-part">
                         <ul>
                             <li>
-                                <a href="">Conventional Oil Change <i class="fa-solid fa-check"></i></a>
+                                <a >Conventional Oil Change <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Visual Brake Inspection <i class="fa-solid fa-check"></i></a>
+                                <a >Visual Brake Inspection <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Transmission Fluid Service <i class="fa-solid fa-check"></i></a>
+                                <a >Transmission Fluid Service <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Fuel System Cleaning <i class="fa-solid fa-check"></i></a>
+                                <a >Fuel System Cleaning <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Battery Check <i class="fa-regular fa-circle-xmark"></i></a>
+                                <a >Battery Check <i class="fa-regular fa-circle-xmark"></i></a>
                             </li>
                             <li>
-                                <a href="">Tire Rotation <i class="fa-regular fa-circle-xmark"></i></a>
+                                <a >Tire Rotation <i class="fa-regular fa-circle-xmark"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -140,22 +140,22 @@
                     <div  class="conditions-part">
                         <ul>
                             <li>
-                                <a href="">Conventional Oil Change <i class="fa-solid fa-check"></i></a>
+                                <a >Conventional Oil Change <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Visual Brake Inspection <i class="fa-solid fa-check"></i></a>
+                                <a >Visual Brake Inspection <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Transmission Fluid Service <i class="fa-solid fa-check"></i></a>
+                                <a >Transmission Fluid Service <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Fuel System Cleaning <i class="fa-solid fa-check"></i></a>
+                                <a >Fuel System Cleaning <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Battery Check <i class="fa-solid fa-check"></i></a>
+                                <a >Battery Check <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Tire Rotation <i class="fa-solid fa-check"></i></a>
+                                <a >Tire Rotation <i class="fa-solid fa-check"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -180,22 +180,22 @@
                     <div class="conditions-part">
                         <ul>
                             <li>
-                                <a href="">Belts and Hoses <i class="fa-regular fa-circle-xmark"></i></a>
+                                <a >Belts and Hoses <i class="fa-regular fa-circle-xmark"></i></a>
                             </li>
                             <li>
-                                <a href="">Suspension and Shock Absorbers <i class="fa-solid fa-check"></i></a>
+                                <a >Suspension and Shock Absorbers <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Transmission Fluid Service <i class="fa-regular fa-circle-xmark"></i></a>
+                                <a >Transmission Fluid Service <i class="fa-regular fa-circle-xmark"></i></a>
                             </li>
                             <li>
-                                <a href="">Fuel System Cleaning <i class="fa-solid fa-check"></i></a>
+                                <a >Fuel System Cleaning <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Exhaust System <i class="fa-regular fa-circle-xmark"></i></a>
+                                <a >Exhaust System <i class="fa-regular fa-circle-xmark"></i></a>
                             </li>
                             <li>
-                                <a href="">Interior Components <i class="fa-regular fa-circle-xmark"></i></a>
+                                <a >Interior Components <i class="fa-regular fa-circle-xmark"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -215,22 +215,22 @@
                     <div  class="conditions-part">
                         <ul>
                             <li>
-                                <a href="">Belts and Hoses <i class="fa-solid fa-check"></i></a>
+                                <a >Belts and Hoses <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Suspension and Shock Absorbers <i class="fa-regular fa-circle-xmark"></i></a>
+                                <a >Suspension and Shock Absorbers <i class="fa-regular fa-circle-xmark"></i></a>
                             </li>
                             <li>
-                                <a href="">Transmission Fluid Service <i class="fa-regular fa-circle-xmark"></i></a>
+                                <a >Transmission Fluid Service <i class="fa-regular fa-circle-xmark"></i></a>
                             </li>
                             <li>
-                                <a href="">Fuel System Cleaning <i class="fa-solid fa-check"></i></a>
+                                <a >Fuel System Cleaning <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Exhaust System <i class="fa-regular fa-circle-xmark"></i></a>
+                                <a >Exhaust System <i class="fa-regular fa-circle-xmark"></i></a>
                             </li>
                             <li>
-                                <a href="">Interior Components <i class="fa-solid fa-check"></i></a>
+                                <a >Interior Components <i class="fa-solid fa-check"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -250,22 +250,22 @@
                     <div  class="conditions-part">
                         <ul>
                             <li>
-                                <a href="">Belts and Hoses <i class="fa-solid fa-check"></i></a>
+                                <a >Belts and Hoses <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Suspension and Shock Absorbers <i class="fa-solid fa-check"></i></a>
+                                <a >Suspension and Shock Absorbers <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Transmission Fluid Service <i class="fa-solid fa-check"></i></a>
+                                <a >Transmission Fluid Service <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Fuel System Cleaning <i class="fa-solid fa-check"></i></a>
+                                <a >Fuel System Cleaning <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Exhaust System <i class="fa-solid fa-check"></i></a>
+                                <a >Exhaust System <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Interior Components <i class="fa-solid fa-check"></i></a>
+                                <a >Interior Components <i class="fa-solid fa-check"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -273,7 +273,6 @@
                 </div>
            </div>
         </div>
-            <!--  -->
         <div id="card-gold" class="section-card-list-pricing">
             <div class="section-card-list-pricing-plan-content">
                 <div class="card-items-pricing">
@@ -290,22 +289,22 @@
                     <div class="conditions-part">
                         <ul>
                             <li>
-                                <a href="">Conventional Oil Change <i class="fa-regular fa-circle-xmark"></i></a>
+                                <a >Conventional Oil Change <i class="fa-regular fa-circle-xmark"></i></a>
                             </li>
                             <li>
-                                <a href="">Horn and Warning Lights <i class="fa-regular fa-circle-xmark"></i></a>
+                                <a >Horn and Warning Lights <i class="fa-regular fa-circle-xmark"></i></a>
                             </li>
                             <li>
-                                <a href="">Suspension Components <i class="fa-solid fa-check"></i></a>
+                                <a >Suspension Components <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Exhaust Smoke <i class="fa-solid fa-check"></i></a>
+                                <a >Exhaust Smoke <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Power Steering <i class="fa-regular fa-circle-xmark"></i></a>
+                                <a >Power Steering <i class="fa-regular fa-circle-xmark"></i></a>
                             </li>
                             <li>
-                                <a href="">Radiator and Cooling System <i class="fa-regular fa-circle-xmark"></i></a>
+                                <a >Radiator and Cooling System <i class="fa-regular fa-circle-xmark"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -325,22 +324,22 @@
                     <div  class="conditions-part">
                         <ul>
                             <li>
-                                <a href="">Conventional Oil Change <i class="fa-regular fa-circle-xmark"></i></a>
+                                <a >Conventional Oil Change <i class="fa-regular fa-circle-xmark"></i></a>
                             </li>
                             <li>
-                                <a href="">Horn and Warning Lights <i class="fa-solid fa-check"></i></a>
+                                <a >Horn and Warning Lights <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Suspension Components <i class="fa-solid fa-check"></i></a>
+                                <a >Suspension Components <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Exhaust Smoke  <i class="fa-solid fa-check"></i></a>
+                                <a >Exhaust Smoke  <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Power Steering <i class="fa-regular fa-circle-xmark"></i></a>
+                                <a >Power Steering <i class="fa-regular fa-circle-xmark"></i></a>
                             </li>
                             <li>
-                                <a href="">Radiator and Cooling System <i class="fa-regular fa-circle-xmark"></i></a>
+                                <a >Radiator and Cooling System <i class="fa-regular fa-circle-xmark"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -360,22 +359,22 @@
                     <div  class="conditions-part">
                         <ul>
                             <li>
-                                <a href="">Conventional Oil Change <i class="fa-solid fa-check"></i></a>
+                                <a >Conventional Oil Change <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Horn and Warning Lights <i class="fa-solid fa-check"></i></a>
+                                <a >Horn and Warning Lights <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Suspension Components <i class="fa-solid fa-check"></i></a>
+                                <a >Suspension Components <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Exhaust Smoke <i class="fa-solid fa-check"></i></a>
+                                <a >Exhaust Smoke <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Power Steering <i class="fa-solid fa-check"></i></a>
+                                <a >Power Steering <i class="fa-solid fa-check"></i></a>
                             </li>
                             <li>
-                                <a href="">Radiator and Cooling System <i class="fa-solid fa-check"></i></a>
+                                <a >Radiator and Cooling System <i class="fa-solid fa-check"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -385,10 +384,10 @@
         </div>
         </div>
     </div>
-</div>
-   
+</div>  
 </section>
-<section> <!-- Contact info section -->
+<section>
+<!-- Contact info section -->
    <div class="aside-container-main-info">
       <div class="container">
          <div class="gc-3">

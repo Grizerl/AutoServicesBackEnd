@@ -16,31 +16,6 @@
     --font-family-sans: "Open Sans", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    font-style: normal;
-    font-family: var(--font-family-roboto);
-    margin: 15px 0;
-    line-height: 1.2;
-    font-weight: 700;
-    transition: .5s;
-    font-size: 25px;
-}
-html
-{
-    scroll-behavior: smooth;
-}
-body {
-  margin: 0px;
-}
-
-ul {
-    list-style-type: none;
-}
-
-li {
-    text-decoration: none;
-}
-
 .banner-area {
     height: 40vh;
     width: 100%;

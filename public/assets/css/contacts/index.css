@@ -213,6 +213,7 @@ color: var(--clr-white);
 {
     margin: 0px;
     width: 10%;
+    box-shadow: 0 0 0;
 }
 .ask-ques-check-tit
 {

@@ -16,11 +16,11 @@
          <div>
             <ul class="container-nav-item">
                <li>
-                  <a  class="cont-list" href="{{ route('home_auto') }}">Home</a>
+                  <a class="cont-list" href="{{ route('home_auto') }}">Home</a>
                </li>
-               <li  class="cont-list"><i class="fas fa-angle-right"></i></li>
+               <li class="cont-list"><i class="fas fa-angle-right"></i></li>
                <li>
-                  <a  class="cont-list">About the company</a>
+                  <a class="cont-list">About the company</a>
                </li>
             </ul>
          </div>

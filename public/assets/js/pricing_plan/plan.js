@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const card_platinum = document.getElementById("card-platinum");
     const card_gold = document.getElementById("card-gold");
 
-    // Функція для приховування всіх карток і видалення активного класу з кнопок
     const hideAllCardsAndResetButtons = () => {
         card_silver.classList.remove('show');
         card_platinum.classList.remove('show');
@@ -18,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
         btn_gold.classList.remove('active');
     };
 
-    // Відображення Silver плану і активування кнопки
     btn_silver.addEventListener('click', (event) => {
         event.preventDefault();
         hideAllCardsAndResetButtons();
@@ -26,7 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
         btn_silver.classList.add('active');
     });
 
-    // Відображення Platinum плану і активування кнопки
     btn_platinum.addEventListener('click', (event) => {
         event.preventDefault();
         hideAllCardsAndResetButtons();
@@ -34,7 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
         btn_platinum.classList.add('active');
     });
 
-    // Відображення Gold плану і активування кнопки
     btn_gold.addEventListener('click', (event) => {
         event.preventDefault();
         hideAllCardsAndResetButtons();

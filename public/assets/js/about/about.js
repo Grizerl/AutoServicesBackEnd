@@ -9,13 +9,13 @@ document.addEventListener("DOMContentLoaded", function() {
   document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll(".according-bth").forEach(btn => {
         btn.addEventListener('click', () => {
-            const content = btn.parentElement.nextElementSibling; // Get the paragraph after the parent container
+            const content = btn.parentElement.nextElementSibling; 
             btn.classList.toggle('active');
 
             if (content.style.maxHeight) {
                 content.style.maxHeight = null; // Collapse
             } else {
-                content.style.maxHeight = content.scrollHeight + "px"; // Expand
+                content.style.maxHeight = content.scrollHeight + "px"; 
             }
         });
     });

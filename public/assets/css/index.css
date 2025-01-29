@@ -40,8 +40,8 @@ h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     -webkit-transition: .5s;
     transition: .5s;
 }
-html, body {
 
+html, body {
     scroll-behavior: smooth;
     overflow-x: hidden; 
 }
@@ -385,7 +385,7 @@ a
 }
 .aside-container-section-card
 {
-    padding-top: 60px;
+    padding-top: 50px;
     padding-bottom: 45px;
 }
 
@@ -1186,6 +1186,11 @@ form input,.section-contact-form-comment
 
     .section-contact-container-form {
         width: 90%;
+        box-shadow: 0 0 10px;
+    }
+
+    .section-contact-form-btn,form input, .section-contact-form-comment {
+        box-shadow: 0 0 10px;
     }
 
     .section-contact-container-title {
@@ -1242,6 +1247,10 @@ form input,.section-contact-form-comment
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+    }
+    
+    .top-right {
+        padding-top: 10px;
     }
 
     .section-support-subtitle,.section-client-subtitle  {

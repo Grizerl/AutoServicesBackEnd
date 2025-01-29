@@ -1,28 +1,31 @@
 @extends('layouts.auto_layouts')
+
 @section('title', 'Автосервіс - Car Services and Mechanic')
+
 @section('link')
 <link rel="stylesheet" href="{{ asset('assets/css/index.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/contacts/index.css') }}">
 <script src="{{ asset('assets/js/index.js') }}"></script>
 @endsection
+
 @section('content')
 <div class="wrapper">
-<div class="banner-area">
-   <div class="container-area">
-      <h2 class="sc-ttl-cont">Contact</h2>
-      <div>
-         <ul class="container-nav-item">
-            <li>
-               <a  class="cont-list" href="{{ route('home_auto') }}">Home</a>
-            </li>
-            <li  class="cont-list"><i class="fas fa-angle-right"></i></li>
-            <li>
-               <a  class="cont-list">Contact</a>
-            </li>
-         </ul>
+   <div class="banner-area">
+      <div class="container-area">
+         <h2 class="sc-ttl-cont">Contact</h2>
+         <div>
+            <ul class="container-nav-item">
+               <li>
+                  <a  class="cont-list" href="{{ route('home_auto') }}">Home</a>
+               </li>
+               <li class="cont-list"><i class="fas fa-angle-right"></i></li>
+               <li>
+                  <a class="cont-list">Contact</a>
+               </li>
+            </ul>
+         </div>
       </div>
    </div>
-</div>
 <section style="margin-top: 6vh; margin-bottom: 8vh">
    <div>
       <div class="container">
@@ -38,8 +41,6 @@
             </div>
             <div class="section-contact-info-container">
                <h3 class="contact-title-main-info">Як з нами зв'язатися?</h3>
-               <!--  -->
-               <!--  -->
                <ul class="contact-info-list">
                   <li>
                      <i class="fa-solid fa-phone fa-contac"></i>
@@ -52,7 +53,6 @@
                      <i class="fa-solid fa-hotel fa-contac"></i><a>Mulatol Pakar Matha 5400</a>
                   </li>
                </ul>
-               <!--  -->
                <h3 class="contact-title-main-info">Режим роботи</h3>
                <span class="work-schedule"><i class="fa-solid fa-clock fa-contac"></i>Monday–Saturday: 08:00–18:00;</span>
             </div>
@@ -64,39 +64,35 @@
    <div>
       <div class="section-header-ask-question-banner">
          <div class="container">
-         <div style=" display: flex; align-items: center; justify-content: center; flex-direction: column;">
-            <h1 class="title-question-page">ЗАДАТИ ПИТАННЯ</h1>
-            <h3 class="subtitle-question-page">Менеджери компанії з радістю дадуть відповіді на ваші <br> запитання і допоможуть з вибором.</h3>
-         </div>
-         <div class="section-ask-question-form">
+            <div style=" display: flex; align-items: center; justify-content: center; flex-direction: column;">
+               <h1 class="title-question-page">ЗАДАТИ ПИТАННЯ</h1>
+               <h3 class="subtitle-question-page">Менеджери компанії з радістю дадуть відповіді на ваші <br> запитання і допоможуть з вибором.</h3>
+            </div>
+            <div class="section-ask-question-form">
+               <form class="form-ask-question" action="{{route('contact.store')}}" method="post" novalidate>
+                  @csrf
+                  <label class="ask-question-form-title" for="name">Ваше ім'я:<span>*</span></label>
+                  <input class="ask-question-form-input" id="name" name="name" required type="text">
 
-            <form class="form-ask-question" action="{{route('contact.store')}}" method="post" novalidate>
-               @csrf
-               <label class="ask-question-form-title" for="name">Ваше ім'я:<span>*</span></label>
-               <input class="ask-question-form-input" id="name" name="name" required type="text">
+                  <label class="ask-question-form-title" for="phone">Телефон:<span>*</span></label>
+                  <input class="ask-question-form-input" id="phone" name="phone" required type="tel">
 
-               <label class="ask-question-form-title" for="phone">Телефон:<span>*</span></label>
-               <input class="ask-question-form-input" id="phone" name="phone" required type="tel">
+                  <label class="ask-question-form-title" for="email">E-mail:</label>
+                  <input class="ask-question-form-input" id="email" name="email" required type="email">
 
-               <label class="ask-question-form-title" for="email">E-mail:</label>
-               <input class="ask-question-form-input" id="email" name="email" required type="email">
+                  <label class="ask-question-form-title" for="message">Повідомлення:<span>*</span></label>
+                  <input class="ask-question-form-input" id="message" name="message" required type="text">
 
-               <label class="ask-question-form-title" for="message">Повідомлення:<span>*</span></label>
-               <input class="ask-question-form-input" id="message" name="message" required type="text">
-
-               <div style="display: flex; align-items: center; width: 100%; margin-top:15px;">
-                  <input class="ask-question-form-checkbox" id="checkbox"  name="subscribe" value="1" type="checkbox">
-                  <label class="ask-question-form-title ask-ques-check-tit" for="checkbox">Я згоден на <span>обробку персональних даних</span></label>
-               </div>
-
-               <div class="section-form-btn">
-                  <span>* Обов'язкове поле</span>
-                  <button class="btn-form" type="submit">Відправити</button>
-               </div>
-
-            </form>
-            
-         </div>
+                  <div style="display: flex; align-items: center; width: 100%; margin-top:15px;">
+                     <input class="ask-question-form-checkbox" id="checkbox"  name="subscribe" value="1" type="checkbox">
+                     <label class="ask-question-form-title ask-ques-check-tit" for="checkbox">Я згоден на <span>обробку персональних даних</span></label>
+                  </div>
+                  <div class="section-form-btn">
+                     <span>* Обов'язкове поле</span>
+                     <button class="btn-form" type="submit">Відправити</button>
+                  </div>
+               </form>
+            </div>
          </div>
       </div>
    </div>

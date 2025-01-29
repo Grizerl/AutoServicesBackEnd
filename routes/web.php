@@ -13,7 +13,8 @@ Auth::routes();
 Route::get('/', function (){return redirect('/AutoStyle');});
 
 Route::prefix('AutoStyle')->group(function () {
-    Route::get('/', [App\Http\Controllers\Auto\HomeController::class, 'index'])->name('home_auto');    
+    Route::get('/', [App\Http\Controllers\Auto\HomeController::class, 'index'])->name('home_auto'); 
+     
     Route::prefix('About')->group(function () {
         Route::get('News', [App\Http\Controllers\Auto\AboutController::class, 'index'])->name('vision');
         Route::get('History', [App\Http\Controllers\Auto\AboutController::class, 'history'])->name('history');
@@ -23,8 +24,7 @@ Route::prefix('AutoStyle')->group(function () {
         Route::get('Pricing/Plan', [App\Http\Controllers\Auto\PageController::class, 'plan'])->name('plan');
         Route::get('Partners', [App\Http\Controllers\Auto\PageController::class, 'partners'])->name('partners');
     });
-    Route::prefix('Contacts')->group(function()
-    {
+    Route::prefix('Contacts')->group(function(){
         Route::get('Detailed', [App\Http\Controllers\Auto\ContactController::class, 'index'])->name('contacts');
     });
 });

@@ -13,7 +13,9 @@
          <h2 class="media-text-info">Сторінка <br><span>не знайдена</span></h2>
          <h3 class="media-text">Вибачте, але такої сторінки немає на нашому сайті.<br> Можливо, ви ввели неправильну адресу.</h3>
          <ul>
-            <li><a class="media-psevdo-btn" href="{{ route('home_auto') }}">Перейти на головну</a></li>
+            <li>
+               <a class="media-psevdo-btn" href="{{ route('home_auto') }}">Перейти на головну</a>
+            </li>
          </ul>
       </div>
    </div>
