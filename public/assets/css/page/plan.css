@@ -67,7 +67,7 @@
     display: none;
 }
 .section-card-list-pricing.show {
-    display: block; /* Відображає картку лише при додаванні класу 'show' */
+    display: block;
 }
 .element-nav-link.active
 {

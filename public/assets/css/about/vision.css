@@ -157,7 +157,6 @@
     color: var(--clr-black-light);
 }
 
-/* Стилі для кнопок навігації */
 .swiper-button-next,
 .swiper-button-prev {
     color: var(--clr-red-btn);
@@ -169,7 +168,7 @@
     transition: background-color 0.3s ease;
     margin-top: 20px; 
 }
-/* Кнопки розміщуються під текстом і розсунуті */
+
 .swiper-button-next {
     position: static;
     float: right;

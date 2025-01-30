@@ -99,17 +99,22 @@ window.addEventListener('load', function () {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const burgerMenu = document.querySelector('.burger-menu');
-    const menuContainer = document.querySelector('.menu-container');
-    const closeButton = document.querySelector('.close-btn');
+document.addEventListener("DOMContentLoaded", function () {
+    const burgerMenu = document.querySelector(".burger-menu");
+    const menuContainer = document.querySelector(".menu-container");
+    const closeBtn = document.querySelector(".close-btn");
 
-    function toggleMenu() {
-        menuContainer.classList.toggle('active');
-    }
+    burgerMenu.addEventListener("click", function () {
+        menuContainer.classList.add("active");
+    });
 
-    burgerMenu.querySelector('.burger-icon').addEventListener('click', toggleMenu);
+    closeBtn.addEventListener("click", function () {
+        menuContainer.classList.remove("active");
+    });
 
-    closeButton.addEventListener('click', toggleMenu);
+    document.addEventListener("click", function (event) {
+        if (!menuContainer.contains(event.target) && !burgerMenu.contains(event.target)) {
+            menuContainer.classList.remove("active");
+        }
+    });
 });
-

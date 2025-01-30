@@ -179,12 +179,12 @@ a
 }
 
 .menu-item:hover .sub-menu {
-    opacity: 1; /* Робимо видимим при hover */
-    visibility: visible; /* Відображаємо меню */
+    opacity: 1; 
+    visibility: visible; 
 }
 
 .menu-item:hover .nav-link {
-    color: var(--clr-black-dark); /* Додаємо візуальний ефект на саму кнопку */
+    color: var(--clr-black-dark); 
 }
 
 .lk-content
@@ -477,7 +477,7 @@ a
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px;
-    transform-origin: center; /* Початок трансформації з центру */
+    transform-origin: center; 
     transition: width 1s ease;
 }
 
@@ -1074,19 +1074,27 @@ form input,.section-contact-form-comment
         background-color: var(--clr-white);
         opacity: 0;
         transition: transform 0.3s ease-in-out; 
+        transform: translateX(100%);
         z-index: 999;
     }
 
     .menu-container.active {
-      opacity: 1;
-      }
+        transform: translateX(0);
+        opacity: 1;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
 
     .burger-menu {
         display: block;
+        cursor: pointer;
     }
 
     .menu {
         padding: 20px 0px;
+    }
+
+    .menu-item:hover .nav-link {
+        color: var(--clr-white-light); 
     }
 
     .sc-FAFfgd {
@@ -1114,9 +1122,10 @@ form input,.section-contact-form-comment
     
     
     .menu-item:hover .sc-FAFfgd {
-        opacity: 1; /* Робимо видимим при hover */
-        visibility: visible; /* Відображаємо меню */
+        opacity: 1; 
+        visibility: visible; 
     }
+    
     .close-btn {
         text-align: right;
         font-size: 2.5rem;

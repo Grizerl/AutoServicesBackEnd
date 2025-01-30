@@ -87,7 +87,7 @@
 .shop_content > div {
     flex: 0 1 calc(33.333% - 170px);
     box-sizing: border-box;
-    margin-bottom: 20px; /* Optional: space between rows */
+    margin-bottom: 20px;
 }
 .sn-title
 {

@@ -3,8 +3,8 @@
 @section('content')
 <div class="header-view-container">
    <div class="view-content">
-      <div class="image-container">
-         <img class="view-img" src="/assets/images/Car-repaire.png" alt="Images Car">
+      <div>
+         <img class="view-img-car" src="/assets/images/Car-repaire.png" alt="Images Car">
       </div>
       <div>
          <h2 class="view-title">Portfolio Information</h2>

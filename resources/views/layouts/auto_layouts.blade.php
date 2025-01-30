@@ -10,9 +10,6 @@
     <!-- Link to Custom CSS -->
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="icon" type="png" href="/assets/images/website-logo.png">
-    <!-- AOS (Animate on Scroll) Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- FontAwesome Icons -->
     <script src="https://kit.fontawesome.com/46a432ef36.js" crossorigin="anonymous"></script>
     <!-- Additional CSS Links -->
@@ -263,7 +260,6 @@
 </aside>
 </footer>
 </div>
-<script>AOS.init();</script>
 <script src="./assets/js/index.js"></script>
 </body>
 </html>
